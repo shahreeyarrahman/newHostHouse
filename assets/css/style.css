@@ -1,0 +1,595 @@
+/* font link  */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --ubunto: Ubuntu;
+    --raleway: Raleway;
+    --primary-font: "Ubuntu";
+    --secondary-font: "Raleway";
+    --primary: #483875;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+nav a {
+    font-family: var(--primary-font);
+    font-size: 16px !important;
+    margin-left: 30px;
+}
+
+.dropdown-menu a {
+ margin-left: 0px ;
+ padding: 8px !important;
+}
+
+nav .login_button {
+    background-color: var(--primary);
+    color: white;
+    text-transform: uppercase;
+    
+    padding: 5px 15px !important;
+    margin-left:30px;
+}
+
+nav .login_button:hover {
+    border: solid 1px var(--primary);
+    color: var(--primary) !important;
+    text-transform: uppercase;
+   
+}
+
+nav li a:hover {
+    color: var(--primary) !important;
+    background-color: var(--primary);
+    border-radius: 3px;
+    color: white !important;
+}
+
+.dropdown-menu a {
+    padding: 2px;
+}
+nav{
+    /* backdrop-filter: blur(10px); */
+}
+
+@media screen and (max-width:768px) {
+    nav{
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: rgb(255, 255, 255);
+    }
+    nav .login_button{
+        margin-left: 0px;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px !important;
+    }
+    nav ul li a {
+        text-align: center;
+        margin: 0 !important;
+        padding: 5px !important;
+    }
+    .domainSearchForm1{
+        padding: 0px 20px;
+    }
+}
+
+/* start hero section */
+.hero {
+    background: url(../images/hero-image.png) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    object-fit: contain;
+    font-family: "Ubuntu";
+    
+}
+
+.hero_content button {
+    padding: 5px;
+    font-weight: 500;
+    background-color: #FF6F6F;
+    color: white;
+    overflow: hidden;
+
+}
+.hero_content h1{
+    font-size: 60px;
+    font-family: var(--primary-font);
+    line-height: 80px;
+}
+
+@media screen and (max-width:768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero_content h1 {
+        font-size: clamp(25px, 1vw, 100px);
+        line-height: 30px;
+    }
+
+    .hero_content button {
+        font-size: 15px;
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero_content button {
+        font-size: x-large !important;
+        padding: 10px !important;
+        margin-top: 10px !important;
+    }
+}
+
+.hover-effectbtn {
+    position: relative;
+}
+
+.hover-effect-child {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: var(--primary);
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.hover-effectbtn:hover .hover-effect-child {
+    visibility: visible;
+    height: 100%;
+    transition: all .7s ease-in-out;
+}
+
+.hover-effectbtn:hover .visiblehidden {
+    visibility: hidden;
+
+}
+
+/* start DomainSearch section  */
+
+
+
+.domainPricings {
+    width: 100%;
+    min-height: 120px;
+    background-color: rgb(255, 255, 255);
+    font-family: Ubuntu;
+}
+.feature_content input {
+    background-color: #FFDDDD;
+    
+}
+.feature_content form input:focus {
+    background-color: #FFDDDD;
+    outline: none;
+    padding-left: 40px;
+    transition: all 1s;
+}
+@media screen and (max-width:768px) {
+    .feature_content form {
+        width: 100% !important;
+    }
+}
+
+#domainSearchSection{
+    position: relative;
+}
+.domainSearch{
+    margin-top: -100px;
+   
+
+}
+
+/* start feature section */
+#card {
+    font-family: var(--ubunto);
+}
+
+
+/* start plan section  */
+.plan {
+    font-family: var(--ubunto);
+}
+
+.card-one {
+    width: 25%;
+    height: 570px;
+    background-color: #ffffff;
+    border-radius: 30px 0px;
+    padding: 0px !important;
+    position: relative;
+}
+
+.hostingPricingCard .button-one {
+    background-color: var(--primary);
+    color: white;
+}
+
+.hostingPricingCard .button-two {
+    border: solid 1px var(--primary);
+}
+
+.hostingPricingCard button:hover {
+    border: solid 1px var(--primary);
+}
+
+.card-one .p-text {
+    text-transform: capitalize;
+    font-size: small;
+}
+
+.card-one ul li {
+    text-transform: capitalize;
+    font-size: small;
+    padding: 4px;
+    list-style-type: none;
+    font-family: var(--raleway);
+}
+
+.card-one .card-one-bottm {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 0 0 25px 0px;
+    background-color: var(--primary);
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* start card two  */
+.card-two {
+    background-color: var(--primary);
+    color: white;
+    perspective: 100px;
+    perspective-origin: left;
+    width: 25%;
+    min-height: 630px;
+    overflow: hidden;
+    padding: 0 !important;
+    position: relative;
+    perspective: 100px;
+    perspective-origin: left;
+}
+
+.card-two .box {
+
+    width: 50px;
+    height: 200px;
+    background-color: #F54646;
+    transform: rotateZ(287deg) rotateX(31deg) rotateY(341deg);
+    flex-shrink: 0;
+    position: absolute;
+    top: -60px;
+    left: 20px;
+
+}
+
+.card-two-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #F54646 !important;
+}
+
+.rotate-text {
+    position: absolute;
+    top: 30px;
+    left: -2px;
+    transform: rotate(-49deg);
+}
+
+@media screen and (max-width:576px) {
+    .card-two{
+        margin-top: 20px !important;
+    }
+}
+
+/* start control pannel */
+#controlPannel {
+    font-family: var(--ubunto);
+}
+
+.laptop-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .pannel-card1 {
+        width: 100%;
+    }
+}
+
+.laptop-main-img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+}
+
+/* start migrate section  */
+.migrate {
+    font-family: var(--ubunto);
+}
+
+.view-button button {
+    background-color: #F54646;
+    color: white;
+}
+
+.view-button button:hover {
+    color: #F54646;
+    border-color: #F54646;
+}
+
+.truck-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+@media screen and (max-width: 992px) {
+    .view-button button {
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    .migrate_child2 {
+        padding: 0 100px;
+    }
+}
+
+/* map section started */
+.world-map {
+    width: 100%;
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 1em;
+    position: relative;
+
+}
+
+.world-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.pin {
+
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+}
+
+.pin span {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: blueviolet;
+    border-radius: 3em;
+    padding: .5em .9em;
+    font-size: 1em;
+}
+
+.Germany {
+    top: 57%;
+    left: 17%;
+    cursor: pointer;
+}
+
+.india {
+    top: 80%;
+    left: 30%;
+    cursor: pointer;
+}
+
+.bangladesh {
+    top: 76%;
+    left: 34%;
+    cursor: pointer;
+}
+
+.Russia {
+    top: 44%;
+    left: 72%;
+    cursor: pointer;
+}
+
+.uk {
+    top: 44%;
+    left: 80%;
+    cursor: pointer;
+}
+
+.indonesia {
+    top: 81%;
+    left: 87%;
+    cursor: pointer;
+}
+
+/* Responsive map */
+@media screen and (max-width:576px) {
+    .india {
+        top: 76%;
+        left: 29%;
+    }
+
+    .bangladesh {
+        top: 72%;
+        left: 33%;
+    }
+
+    .indonesia {
+        top: 78%;
+        left: 87%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .Germany {
+        top: 50%;
+        left: 17%;
+
+    }
+
+    .bangladesh {
+        top: 68%;
+        left: 33%;
+    }
+
+    .indonesia {
+        top: 75%;
+        left: 85%;
+    }
+}
+
+.map-button {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* finished map with responsive  */
+/* start service section  */
+.service {
+    font-family: var(--ubunto);
+    margin-top: 80px;
+}
+
+/* start customer section  */
+.customer {
+    font-family: var(--ubunto);
+    margin-top: 110px;
+}
+
+.customer-card {
+    background-color: var(--primary) !important;
+}
+
+.customer .customer-text {
+    color: var(--primary);
+}
+
+.ricky-jhon-text {
+    font-family: var(--raleway) !important;
+    font-size: small;
+}
+
+.rating {
+    font-family: var(--raleway);
+}
+
+/* start subscribe section  */
+.subscribe {
+    background: url(../images/subscribe-img.png) no-repeat;
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--ubunto);
+}
+
+.subscribe-input span {
+    background-color: #483875;
+
+}
+
+@media screen and (max-width:768px) {
+    .subscribe-input input {
+        width: 100% !important;
+    }
+
+    .subscribe-input span {
+        font-size: small !important;
+    }
+    .subscribe-input{
+        width: 100%;
+    }
+    .location-text{
+        margin-bottom: -50px !important;
+    }
+}
+
+/* start footer section  */
+.footer {
+    width: 100%;
+    min-height: 450px;
+    background-color: #160E2F;
+    font-family: var(--ubunto);
+}
+
+.footer_child1 {
+    width: 30%;
+    color: white;
+}
+
+.domain-service {
+    width: 20%;
+    color: white;
+    text-transform: capitalize;
+}
+
+.footer p {
+    color: rgb(168, 168, 168) !important;
+    text-align: start;
+
+}
+
+/* finished home page  */
+.unlimitedPricingCard{
+    display: flex;
+}
+@media screen and (max-width: 576px) {
+    .ratingResponsive{
+        width: 40% !important;
+        margin: 10px;
+    }
+    
+}
+
+.location-text{
+    margin-bottom: -130px;
+}
+.tabsParent button{
+    border-color: var(--primary);
+}
+.tabsParent button:focus{
+    background-color: var(--primary);
+    color: white;
+}
+.controlHeading{
+    margin-top: 100px;
+}
