@@ -120,12 +120,21 @@
     <!-- start hero section  -->
     <section class="hero">
         <div class="container">
-            <div class="hero_content text-center">
-                <div class="heroHeadingText">
-                    <h1 class="fw-bold text-uppercase text-white">
+            <div class="hero_content wrapper text-center">
+                <div class="text-area">
+
+                    <span>First</span>
+                    <span>&</span>
+                    <span>featured</span>
+                    <span>hosting</span>
+                    <span>plan</span>
+
+
+
+                    <!-- <h1 class="fw-bold text-uppercase text-white">
                         First & featured hosting plan <br />
                         in your domain
-                    </h1>
+                    </h1> -->
                 </div>
                 <button type="button" class="mt-1 rounded border-0 text-capitalize text-nowrap hover-effectbtn">
                     <span class="visiblehidden"> try to explore </span>
@@ -273,375 +282,384 @@
                 <h3 class="fw-bold pt-5">web hosting plan</h3>
                 <p class="mb-4">choose your own plan</p>
 
-                <!-- new tabs -->
-                <div class="tabsParent">
-                    <div class="btn-group mb-5">
-                        <button class="btn activebtn" onclick="openCity('Monthly')">Monthly</button>
-                        <button class="btn" onclick="openCity('Yearly')">Yearly</button>
+
+                <!-- Pricing Card using BS5 Tabs -->
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills m-auto justify-content-center pb-4" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link pricing_tab active" id="monthly-tab" data-bs-toggle="tab"
+                            data-bs-target="#monthly" type="button" role="tab" aria-controls="home"
+                            aria-selected="true">Monthly</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link pricing_tab" id="yearly-tab" data-bs-toggle="tab"
+                            data-bs-target="#yearly" type="button" role="tab" aria-controls="profile"
+                            aria-selected="false">Yearly</button>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                        <div class="row mx-2 gap-5 d-flex justify-content-center flex-wrap ">
+
+                            <!-- <div class="standardPricingCard"> -->
+                            <div class="col-lg-3 col-md-6 mt-4 card-one text-center border shadow pricingHoverEffect">
+                                <h4 class="pt-4 fw-bold">Standard</h4>
+                                <p class="p-text mb-4">the plan is ideal to get started</p>
+                                <p class="mb-4">
+                                    <span class="fw-bold fs-4 text-danger">$</span>
+                                    <span class="fs-4 fw-bold">5.99</span>
+                                    <sub class="fw-medium">/Per Month</sub>
+                                </p>
+                                <hr class="mx-5 text-secondary" />
+                                <p class="fw-medium">Features</p>
+                                <ul class="text-start mb-5">
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        GB SSD storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        500 GB Brandwidth
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        Website
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
+                                        mail accounts
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        premium SSL certificate
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        auto backup & cloud storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        website toolkit
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        security shild
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        advanced featured
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        24/7 support
+                                    </li>
+                                </ul>
+                                <button class="card-one-bottm fw-medium standardHoverBtn ">get started</button>
+                            </div>
+
+                            <!-- <div class="premiumPricingCard ">  -->
+                            <div class="col-lg-3 col-md-6 px-2 card-one card-two text-center border shadow">
+                                <div class="box"></div>
+                                <span class="rotate-text"> Most Populer </span>
+                                <h4 class="pt-5 fw-bold">Premium</h4>
+                                <p class="p-text mb-4">the plan is ideal to get started</p>
+                                <p class="mb-4">
+                                    <span class="fw-bold fs-4 text-danger">$</span>
+                                    <span class="fs-4 fw-bold">6.99</span>
+                                    <sub class="fw-medium">/Per Month</sub>
+                                </p>
+                                <hr class="mx-5 text-secondary" />
+                                <p class="fw-medium">Features</p>
+                                <ul class="text-start">
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        GB SSD storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        500 GB Brandwidth
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        Website
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
+                                        mail accounts
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        premium SSL certificate
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        auto backup & cloud storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        website toolkit
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        security shild
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        advanced featured
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        24/7 support
+                                    </li>
+                                </ul>
+                                <button class="card-one-bottm fw-medium card-two-bottom">
+                                    get started
+                                </button>
+                            </div>
+
+                            <!-- <div class="unlimitedPricingCard">  -->
+                            <div
+                                class="col-lg-3 col-md-6 mt-4 card-one text-center border shadow resizePricingCard pricingHoverEffect ">
+                                <h4 class="pt-4 fw-bold">Unlimited</h4>
+                                <p class="p-text mb-4">the plan is ideal to get started</p>
+                                <p class="mb-4">
+                                    <span class="fw-bold fs-4 text-danger">$</span>
+                                    <span class="fs-4 fw-bold">9.99</span>
+                                    <sub class="fw-medium">/Per Month</sub>
+                                </p>
+                                <hr class="mx-5 text-secondary" />
+                                <p class="fw-medium">Features</p>
+                                <ul class="text-start">
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        GB SSD storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        500 GB Brandwidth
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        Website
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
+                                        mail accounts
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        premium SSL certificate
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        auto backup & cloud storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        website toolkit
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        security shild
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        advanced featured
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        24/7 support
+                                    </li>
+                                </ul>
+                                <button class="card-one-bottm fw-medium standardHoverBtn">get started</button>
+                            </div>
+
+                            <!-- end card-three -->
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
+
+                        <div class="row mx-2 gap-5 d-flex justify-content-center flex-wrap ">
+                            <div class="col-lg-3 col-md-6 mt-4 card-one text-center border shadow pricingHoverEffect ">
+                                <h4 class="pt-4 fw-bold">Standard</h4>
+                                <p class="p-text mb-4">the plan is ideal to get started</p>
+                                <p class="mb-4">
+                                    <span class="fw-bold fs-4 text-danger">$</span>
+                                    <span class="fs-4 fw-bold">65.99</span>
+                                    <sub class="fw-medium">/Per Year</sub>
+                                </p>
+                                <hr class="mx-5 text-secondary" />
+                                <p class="fw-medium">Features</p>
+                                <ul class="text-start">
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        GB SSD storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        500 GB Brandwidth
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        Website
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
+                                        mail accounts
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        premium SSL certificate
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        auto backup & cloud storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        website toolkit
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        security shild
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        advanced featured
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        24/7 support
+                                    </li>
+                                </ul>
+                                <button class="card-one-bottm fw-medium standardHoverBtn">get started</button>
+                            </div>
+
+                            <!-- <div class="premiumPricingCard ">  -->
+                            <div class="col-lg-3 col-md-6 px-2 card-one card-two text-center border shadow">
+                                <div class="box"></div>
+                                <span class="rotate-text"> Most Populer </span>
+                                <h4 class="pt-5 fw-bold">Premium</h4>
+                                <p class="p-text mb-4">the plan is ideal to get started</p>
+                                <p class="mb-4">
+                                    <span class="fw-bold fs-4 text-danger">$</span>
+                                    <span class="fs-4 fw-bold">86.99</span>
+                                    <sub class="fw-medium">/Per Year</sub>
+                                </p>
+                                <hr class="mx-5 text-secondary" />
+                                <p class="fw-medium">Features</p>
+                                <ul class="text-start">
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        GB SSD storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        500 GB Brandwidth
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        Website
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
+                                        mail accounts
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        premium SSL certificate
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        auto backup & cloud storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        website toolkit
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        security shild
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        advanced featured
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        24/7 support
+                                    </li>
+                                </ul>
+                                <button class="card-one-bottm fw-medium card-two-bottom">
+                                    get started
+                                </button>
+                            </div>
+
+                            <!-- <div class="unlimitedPricingCard">  -->
+                            <div
+                                class="col-lg-3 col-md-6 mt-4 card-one text-center border shadow resizePricingCard pricingHoverEffect ">
+                                <h4 class="pt-4 fw-bold">Unlimited</h4>
+                                <p class="p-text mb-4">the plan is ideal to get started</p>
+                                <p class="mb-4">
+                                    <span class="fw-bold fs-4 text-danger">$</span>
+                                    <span class="fs-4 fw-bold">109.99</span>
+                                    <sub class="fw-medium">/Per Year</sub>
+                                </p>
+                                <hr class="mx-5 text-secondary" />
+                                <p class="fw-medium">Features</p>
+                                <ul class="text-start">
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        GB SSD storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        500 GB Brandwidth
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
+                                        Website
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
+                                        mail accounts
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        premium SSL certificate
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        auto backup & cloud storage
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        website toolkit
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        security shild
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        advanced featured
+                                    </li>
+                                    <li>
+                                        <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
+                                        24/7 support
+                                    </li>
+                                </ul>
+                                <button class="card-one-bottm fw-medium standardHoverBtn">get started</button>
+                            </div>
+
+                            <!-- end card-three -->
+                        </div>
+
                     </div>
                 </div>
-
-                <!--⁡⁢⁣⁢ ⁡⁢⁣⁢tabs content⁡ ⁡ -->
-                <div id="Monthly" class="w3-container city">
-                    <div class="row mx-2 gap-5 d-flex justify-content-center flex-wrap ">
-
-                        <!-- <div class="standardPricingCard"> -->
-                        <div class="col-lg-3 col-md-6 mt-4 card-one text-center border shadow pricingHoverEffect">
-                            <h4 class="pt-4 fw-bold">Standard</h4>
-                            <p class="p-text mb-4">the plan is ideal to get started</p>
-                            <p class="mb-4">
-                                <span class="fw-bold fs-4 text-danger">$</span>
-                                <span class="fs-4 fw-bold">5.99</span>
-                                <sub class="fw-medium">/Per Month</sub>
-                            </p>
-                            <hr class="mx-5 text-secondary" />
-                            <p class="fw-medium">Features</p>
-                            <ul class="text-start mb-5">
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    GB SSD storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    500 GB Brandwidth
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    Website
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
-                                    mail accounts
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    premium SSL certificate
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    auto backup & cloud storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    website toolkit
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    security shild
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    advanced featured
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    24/7 support
-                                </li>
-                            </ul>
-                            <button class="card-one-bottm fw-medium standardHoverBtn ">get started</button>
-                        </div>
-
-                        <!-- <div class="premiumPricingCard ">  -->
-                        <div class="col-lg-3 col-md-6 px-2 card-one card-two text-center border shadow">
-                            <div class="box"></div>
-                            <span class="rotate-text"> Most Populer </span>
-                            <h4 class="pt-5 fw-bold">Premium</h4>
-                            <p class="p-text mb-4">the plan is ideal to get started</p>
-                            <p class="mb-4">
-                                <span class="fw-bold fs-4 text-danger">$</span>
-                                <span class="fs-4 fw-bold">6.99</span>
-                                <sub class="fw-medium">/Per Month</sub>
-                            </p>
-                            <hr class="mx-5 text-secondary" />
-                            <p class="fw-medium">Features</p>
-                            <ul class="text-start">
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    GB SSD storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    500 GB Brandwidth
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    Website
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
-                                    mail accounts
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    premium SSL certificate
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    auto backup & cloud storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    website toolkit
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    security shild
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    advanced featured
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    24/7 support
-                                </li>
-                            </ul>
-                            <button class="card-one-bottm fw-medium card-two-bottom">
-                                get started
-                            </button>
-                        </div>
-
-                        <!-- <div class="unlimitedPricingCard">  -->
-                        <div
-                            class="col-lg-3 col-md-6 mt-4 card-one text-center border shadow resizePricingCard pricingHoverEffect ">
-                            <h4 class="pt-4 fw-bold">Unlimited</h4>
-                            <p class="p-text mb-4">the plan is ideal to get started</p>
-                            <p class="mb-4">
-                                <span class="fw-bold fs-4 text-danger">$</span>
-                                <span class="fs-4 fw-bold">9.99</span>
-                                <sub class="fw-medium">/Per Month</sub>
-                            </p>
-                            <hr class="mx-5 text-secondary" />
-                            <p class="fw-medium">Features</p>
-                            <ul class="text-start">
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    GB SSD storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    500 GB Brandwidth
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    Website
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
-                                    mail accounts
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    premium SSL certificate
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    auto backup & cloud storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    website toolkit
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    security shild
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    advanced featured
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    24/7 support
-                                </li>
-                            </ul>
-                            <button class="card-one-bottm fw-medium standardHoverBtn">get started</button>
-                        </div>
-
-                        <!-- end card-three -->
-                    </div>
-                </div>
-
-                <div id="Yearly" class="w3-container city" style="display:none">
-                    <div class="row mx-2 gap-5 d-flex justify-content-center flex-wrap ">
-
-                        <!-- <div class="standardPricingCard"> -->
-                        <div class="col-lg-3 col-md-6 mt-4 card-one text-center border shadow pricingHoverEffect ">
-                            <h4 class="pt-4 fw-bold">Standard</h4>
-                            <p class="p-text mb-4">the plan is ideal to get started</p>
-                            <p class="mb-4">
-                                <span class="fw-bold fs-4 text-danger">$</span>
-                                <span class="fs-4 fw-bold">65.99</span>
-                                <sub class="fw-medium">/Per Year</sub>
-                            </p>
-                            <hr class="mx-5 text-secondary" />
-                            <p class="fw-medium">Features</p>
-                            <ul class="text-start">
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    GB SSD storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    500 GB Brandwidth
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    Website
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
-                                    mail accounts
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    premium SSL certificate
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    auto backup & cloud storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    website toolkit
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    security shild
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    advanced featured
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    24/7 support
-                                </li>
-                            </ul>
-                            <button class="card-one-bottm fw-medium standardHoverBtn">get started</button>
-                        </div>
-
-                        <!-- <div class="premiumPricingCard ">  -->
-                        <div class="col-lg-3 col-md-6 px-2 card-one card-two text-center border shadow">
-                            <div class="box"></div>
-                            <span class="rotate-text"> Most Populer </span>
-                            <h4 class="pt-5 fw-bold">Premium</h4>
-                            <p class="p-text mb-4">the plan is ideal to get started</p>
-                            <p class="mb-4">
-                                <span class="fw-bold fs-4 text-danger">$</span>
-                                <span class="fs-4 fw-bold">86.99</span>
-                                <sub class="fw-medium">/Per Year</sub>
-                            </p>
-                            <hr class="mx-5 text-secondary" />
-                            <p class="fw-medium">Features</p>
-                            <ul class="text-start">
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    GB SSD storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    500 GB Brandwidth
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    Website
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
-                                    mail accounts
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    premium SSL certificate
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    auto backup & cloud storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    website toolkit
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    security shild
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    advanced featured
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    24/7 support
-                                </li>
-                            </ul>
-                            <button class="card-one-bottm fw-medium card-two-bottom">
-                                get started
-                            </button>
-                        </div>
-
-                        <!-- <div class="unlimitedPricingCard">  -->
-                        <div
-                            class="col-lg-3 col-md-6 mt-4 card-one text-center border shadow resizePricingCard pricingHoverEffect ">
-                            <h4 class="pt-4 fw-bold">Unlimited</h4>
-                            <p class="p-text mb-4">the plan is ideal to get started</p>
-                            <p class="mb-4">
-                                <span class="fw-bold fs-4 text-danger">$</span>
-                                <span class="fs-4 fw-bold">109.99</span>
-                                <sub class="fw-medium">/Per Year</sub>
-                            </p>
-                            <hr class="mx-5 text-secondary" />
-                            <p class="fw-medium">Features</p>
-                            <ul class="text-start">
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    GB SSD storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    500 GB Brandwidth
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 3
-                                    Website
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" /> 5
-                                    mail accounts
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    premium SSL certificate
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    auto backup & cloud storage
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    website toolkit
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    security shild
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    advanced featured
-                                </li>
-                                <li>
-                                    <img class="me-3" src="./assets/icons/list-logo.svg" alt="" width="13px" />
-                                    24/7 support
-                                </li>
-                            </ul>
-                            <button class="card-one-bottm fw-medium standardHoverBtn">get started</button>
-                        </div>
-
-                        <!-- end card-three -->
-                    </div>
-                </div>
-                <!--⁡⁢⁣⁢ tabs content ⁡ -->
+                <!-- Pricing Card using BS5 Tabs -->
 
 
 
@@ -1106,18 +1124,18 @@
             </div>
         </section>
         <!-- end footer section -->
-         <div class="d-block copyrightFooter"> 
-        <section id="#copyright">
-            <div class="container mb-5">
-                <div class=" d-flex justify-content-between">
-                    <p><img src="./assets/icons/cLogoIcon.svg" alt="" width="15px"> 2023 All Rights Reserved.</p>
-                    <p>Terms & Condition | Privacy Policy</p>
+        <div class="d-block copyrightFooter">
+            <section id="#copyright">
+                <div class="container mb-5">
+                    <div class=" d-flex justify-content-between">
+                        <p><img src="./assets/icons/cLogoIcon.svg" alt="" width="15px"> 2023 All Rights Reserved.</p>
+                        <p>Terms & Condition | Privacy Policy</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
     </footer>
-    
+
     <!-- end footer section -->
 
 
