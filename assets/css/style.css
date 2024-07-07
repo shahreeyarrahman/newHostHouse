@@ -69,6 +69,7 @@ nav {
         right: 0;
         z-index: 999;
         background-color: rgb(255, 255, 255);
+        
     }
 
     nav .login_button {
@@ -77,6 +78,7 @@ nav {
         border-radius: 5px;
         margin-top: 10px !important;
         padding: 10px !important;
+        margin-bottom: 10px !important;
     }
 
     nav ul li a {
@@ -101,12 +103,11 @@ nav {
     width: 100%;
     height: 100vh;
     background-position: center;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     background-size: cover;
     object-fit: contain;
-    font-family: "Ubuntu";
 
 }
 
@@ -119,28 +120,16 @@ nav {
 
 }
 
-.hero_content h1 {
-    font-size: 60px;
-    font-family: var(--primary-font);
-    line-height: 80px;
-}
-
 @media screen and (max-width:768px) {
     .hero {
         height: 60vh;
     }
-
-    .hero_content h1 {
-        font-size: clamp(25px, 1vw, 100px);
-        line-height: 30px;
-    }
-
     .hero_content button {
         font-size: 15px;
 
     }
 }
-
+/* 
 @media screen and (min-width:768px) {
     .hero_content button {
         font-size: x-large !important;
@@ -176,7 +165,7 @@ nav {
 .hover-effectbtn:hover .visiblehidden {
     visibility: hidden;
 
-}
+} */
 
 /* start DomainSearch section  */
 
@@ -791,3 +780,122 @@ nav {
 /* Hero Text Animation CSS Codes */
 
 /* Imtiaz's Tab Code */
+
+/* my code */
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.textArea{
+    font-size: 60px !important;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.textArea span{
+    color: white;
+    opacity: 0;
+    transform: translate(-300px, 0) scale(0);
+    animation: animatedtext 5s forwards;
+    display: inline-block;
+}
+.text-area span:nth-of-type(2){
+    animation-delay: .2s;
+}
+.text-area span:nth-of-type(3){
+    animation-delay: .4s;
+}
+.text-area span:nth-of-type(4){
+    animation-delay: .6s;
+}
+.text-area span:nth-of-type(5){
+    animation-delay: .8s;
+}
+@keyframes animatedtext {
+    60%{
+        transform: translate(10px,0) scale(1);
+        color: white;
+    }
+    80%{
+        transform: translate(10px,0) scale(1);
+        color: rgb(255, 255, 255);
+    }
+    99%{
+        transform: translate(0) scale(1);
+        color: #ff0000
+    }
+    100%{
+        transform: translate(0) scale(1);
+        color: #ffffff;
+        text-shadow: 2px 2px 5px rgb(255, 0, 0);
+        opacity: 1;
+    }
+}
+.herobtn{
+    padding: 10px;
+    background-color: red;
+    width: 200px;
+    margin:20px auto;
+    font-size: larger;
+    border-radius: 6px;
+    transition: all 1s;
+}
+
+.herobtn:hover{
+    background-color: rebeccapurple;
+}
+
+/* heroBtn */
+
+.heroButtons {
+    margin: 10px;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    /* margin: 20px; */
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 8px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    box-shadow: 1px 1px px white !important;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #483875);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+@media screen and (max-width:768px) {
+    .textArea span{
+        
+        
+        font-size: large;
+    }
+    
+}
