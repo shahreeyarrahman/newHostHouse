@@ -1,0 +1,421 @@
+/* font link  */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --ubunto: Ubuntu;
+    --raleway: Raleway;
+    --primary-font: "Ubuntu";
+    --secondary-font: "Raleway";
+    --primary: #483875;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font) !important;
+
+}
+
+nav a {
+    font-family: var(--primary-font);
+    font-size: 16px !important;
+    margin-left: 30px;
+}
+
+.dropdown-menu a {
+    margin-left: 0px;
+    padding: 8px !important;
+}
+
+nav .login_button {
+    background-color: var(--primary);
+    color: white;
+    text-transform: uppercase;
+
+    padding: 5px 15px !important;
+    margin-left: 30px;
+}
+
+nav .login_button:hover {
+    border: solid 1px var(--primary);
+    color: var(--primary) !important;
+    text-transform: uppercase;
+
+}
+
+nav li a:hover {
+    color: var(--primary) !important;
+    background-color: var(--primary);
+    border-radius: 3px;
+    color: white !important;
+}
+
+.dropdown-menu a {
+    padding: 2px;
+}
+
+nav {
+    /* backdrop-filter: blur(10px); */
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: rgb(255, 255, 255);
+        
+    }
+
+    nav .login_button {
+        margin-left: 0px;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px !important;
+        padding: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    nav ul li a {
+        text-align: center;
+        margin: 0 !important;
+        padding: 10px !important;
+
+    }
+
+    nav ul li {
+        margin-top: 15px;
+    }
+
+    .domainSearchForm1 {
+        padding: 0px 20px;
+    }
+}
+/* end navbar here  */
+/* start Hero sectinon here  */
+#hero{
+    background: url("../image/hostingHeroImage.png");
+    width: 100%;
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* end Hero sectinon here  */
+
+/* satrt card sectinon here  */
+.hoverEffect:hover {
+    box-shadow: 2px 2px 10px rgb(209, 209, 209), -1px -1px 10px rgb(209, 209, 209);
+    cursor: pointer;
+    transition: all .5s;
+    background-color: #fff8f8;
+    border-radius: 10px;
+}
+
+.hoverEffect {
+    width: 355px !important;
+    margin: 10px !important;
+}
+/* end card sectinon here  */
+
+/* star Pricing card sectinon  */
+
+.pricingHoverEffect:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    transition: all 1s;
+}
+
+.pricingHoverEffect:hover .standardHoverBtn {
+    background-color: #F54646 !important;
+    transition: all 1s ease-in-out !important;
+}
+
+.card-one {
+    width: 25%;
+    height: 550px;
+    background-color: #ffffff;
+    border-radius: 30px 0px;
+    padding: 0px !important;
+    position: relative;
+}
+
+.hostingPricingCard .button-one {
+    background-color: var(--primary);
+    color: white;
+}
+
+.hostingPricingCard .button-two {
+    border: solid 1px var(--primary);
+}
+
+.hostingPricingCard button:hover {
+    border: solid 1px var(--primary);
+}
+
+.card-one .p-text {
+    text-transform: capitalize;
+    font-size: small;
+}
+
+.card-one ul li {
+    text-transform: capitalize;
+    font-size: small;
+    padding: 4px;
+    list-style-type: none;
+    font-family: var(--raleway);
+}
+
+.card-one .card-one-bottm {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 0 0 25px 0px;
+    background-color: var(--primary);
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* start card two  */
+.card-two {
+    background-color: var(--primary);
+    color: white;
+    perspective: 100px;
+    perspective-origin: left;
+    width: 25%;
+    height: 596px;
+    overflow: hidden;
+    padding: 0 !important;
+    position: relative;
+    perspective: 100px;
+    perspective-origin: left;
+    cursor: pointer;
+}
+
+.card-two .box {
+
+    width: 50px;
+    height: 200px;
+    background-color: #F54646;
+    transform: rotateZ(287deg) rotateX(31deg) rotateY(341deg);
+    flex-shrink: 0;
+    position: absolute;
+    top: -60px;
+    left: 20px;
+
+}
+
+.card-two-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #F54646 !important;
+}
+
+.rotate-text {
+    position: absolute;
+    top: 30px;
+    left: -2px;
+    transform: rotate(-49deg);
+}
+
+@media screen and (max-width:576px) {
+    .card-two {
+        margin-top: 20px !important;
+    }
+}
+
+/* office code */
+
+.pricing_tab {
+    border: 1px solid var(--primary) !important;
+}
+
+.pricing_tab.active {
+    background-color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+}
+.resizeButtonMonthly{
+    border-radius: 10px 0 0 10px !important;
+}
+.resizeButtonYearly{
+    border-radius: 0  10px 10px 0 !important;
+}
+
+/* end Pricing card responsive sectinon  */
+
+@media screen and (max-width:992px) {
+    .hostingResponsive{
+        width: 400px !important;
+    margin: auto;
+    }
+}
+
+/* start service section  */
+.service {
+    font-family: var(--ubunto);
+    margin-top: 80px;
+}
+
+.serviceHoverEffect:hover {
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(214, 214, 214), -2px -2px 10px rgb(214, 214, 214);
+    background-color: #fff8f8;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.serviceHoverEffect {
+    padding: 10px;
+}
+
+
+/* start customer section  */
+.customer {
+    font-family: var(--ubunto);
+    margin-top: 110px;
+}
+
+.customer-card {
+    background-color: var(--primary) !important;
+}
+
+.customer .customer-text {
+    color: var(--primary);
+}
+
+.ricky-jhon-text {
+    font-family: var(--raleway) !important;
+    font-size: small;
+}
+
+.rating {
+    font-family: var(--raleway);
+}
+/* *******************mejor */
+/* start subscribe section  */
+.subscribe {
+    background: url(../image/subscribe-img.png) no-repeat;
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--ubunto);
+}
+
+.subscribe-input span {
+    background-color: #483875;
+
+}
+
+.domainSearchForm2 input:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+@media screen and (max-width:768px) {
+    .subscribe-input input {
+        width: 100% !important;
+    }
+
+    .subscribe-input span {
+        font-size: small !important;
+    }
+
+    .subscribe-input {
+        width: 100%;
+    }
+
+    .location-text {
+        margin-bottom: -50px !important;
+    }
+}
+
+/* start footer section  */
+.footer {
+    width: 100%;
+    min-height: 450px;
+    background-color: #160E2F;
+    font-family: var(--ubunto);
+}
+
+.footer_child1 {
+    width: 30%;
+    color: white;
+}
+
+.domain-service {
+    width: 20%;
+    color: white;
+    text-transform: capitalize;
+}
+
+.footer p {
+    color: rgb(168, 168, 168) !important;
+    text-align: start;
+
+}
+
+
+
+/* finished home page  */
+.unlimitedPricingCard {
+    display: flex;
+}
+
+@media screen and (max-width: 576px) {
+    .ratingResponsive {
+        width: 40% !important;
+        margin: 10px;
+    }
+
+}
+
+.location-text {
+    margin-bottom: -30px;
+}
+
+.tabsParent button {
+    border-color: var(--primary);
+}
+
+.tabsParent button:focus {
+    background-color: var(--primary);
+    color: white;
+}
+
+.controlHeading {
+    margin-top: 100px;
+}
+
+/* copy Right */
+
+.copyrightFooter {
+    background-color: #FFDDDD;
+}
+
+.copyrightFooter p {
+    font-weight: 500;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+#copyright {
+    background-color: #FFDDDD !important;
+}
+
+/* *******************mejor */
