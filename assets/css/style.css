@@ -111,21 +111,18 @@ nav {
 
 }
 
-.hero_content button {
-    padding: 5px;
-    font-weight: 500;
-    background-color: #FF6F6F;
-    color: white;
-    overflow: hidden;
 
-}
 
 @media screen and (max-width:768px) {
     .hero {
-        height: 60vh;
+        height: 100vh;
     }
-    .hero_content button {
-        font-size: 15px;
+    .heroButtons button {
+        font-size: 15px !important;
+        width: auto;
+        height: 50px;
+        padding: 10px !important;
+        
 
     }
 }
@@ -684,7 +681,7 @@ nav {
 
 .copyrightFooter p {
     font-weight: 500;
-    padding: 20px;
+    padding: 10px;
     margin: 0px 10px;
 }
 
@@ -698,23 +695,19 @@ nav {
 /* Imtiaz's Tab Code */
 .pricing_tab {
     border: 1px solid var(--primary) !important;
-    border-radius: 0 4px 4px 0 !important;
-    -webkit-border-radius: 0 4px 4px 0 !important;
-    -moz-border-radius: 0 4px 4px 0 !important;
-    -ms-border-radius: 0 4px 4px 0 !important;
-    -o-border-radius: 0 4px 4px 0 !important;
 }
 
 .pricing_tab.active {
     background-color: var(--primary) !important;
     border: 1px solid var(--primary) !important;
-    border-radius: 4px 0 0 4px !important;
-    -webkit-border-radius: 4px 0 0 4px !important;
-    -moz-border-radius: 4px 0 0 4px !important;
-    -ms-border-radius: 4px 0 0 4px !important;
-    -o-border-radius: 4px 0 0 4px !important;
 }
-
+.resizeButtonMonthly{
+    border-radius: 10px 0 0 10px !important;
+}
+.resizeButtonYearly{
+    border-radius: 0  10px 10px 0 !important;
+}
+    
 
 /* Hero Text Animation CSS Codes */
 .wrapper {
@@ -789,7 +782,7 @@ nav {
     transform: translate(-50%, -50%);
 }
 .textArea{
-    font-size: 60px !important;
+    font-size: clamp(20px, 4vw, 55px)!important;
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -887,15 +880,16 @@ nav {
 
 
 .btn-hover.color-7 {
-    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #483875);
-    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    background-image: linear-gradient(to right, #483875, #02c2c9, #007dc5, #02c2c9);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75) !important;
 }
 
-@media screen and (max-width:768px) {
-    .textArea span{
-        
-        
-        font-size: large;
-    }
-    
+.laptopImageSticky{
+    position: relative;
+}
+.laptopImage{
+    position: sticky;
+    top: 0;
+    left: 0;
+
 }

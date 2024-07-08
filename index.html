@@ -122,7 +122,7 @@
         <div class="container">
 
             <div class="wrapper">
-                <div class="textArea w-100">
+                <div class="textArea w-100 text-center">
                     <span>FIRST</span> 
                     <span>&</span>  
                     <span>FEATURED</span>  
@@ -138,7 +138,7 @@
                 <!-- <div class="herobtn text-center">
                     <a class="text-capitalize text-light text-decoration-none" href="#">try to explore</a>
                 </div> -->
-                <div class="heroButtons">
+                <div class="heroButtons text-nowrap">
                     <button class="btn-hover color-7 fs-5">Try To Explore</button>
                 </div>
             </div>
@@ -234,7 +234,7 @@
     <section id="card">
         <div class="container mb-5">
             <div class="row d-flex justify-content-evenly flex-wrap">
-                <div class="col-lg-4 mt-5 col-md-6 hoverEffect py-4">
+                <div class="col-lg-4 col-md-6 hoverEffect py-4">
                     <div class="featureCard text-justify px-1">
                         <div class="featureCardImg text-center">
                             <img class="card-img-top me-auto p-4" src="./assets/icons/shild-logo.svg" alt="Card image"
@@ -252,7 +252,7 @@
                     </div>
                 </div>
                 <!--  -->
-                <div class="col-lg-4 mt-5 col-md-6 hoverEffect py-4">
+                <div class="col-lg-4 col-md-6 hoverEffect py-4">
                     <div class="featureCard text-justify px-1">
                         <div class="featureCardImg text-center">
                             <img class="card-img-top m-auto" src="./assets/icons/Launching-logo.svg" alt="Card image"
@@ -270,7 +270,7 @@
                     </div>
                 </div>
                 <!--  -->
-                <div class="col-lg-4 mt-5 col-md-6 hoverEffect py-4">
+                <div class="col-lg-4 col-md-6 hoverEffect py-4">
                     <div class="featureCard text-justify px-1">
                         <div class="featureCardImg text-center">
                             <img class="card-img-top m-auto p-4" src="./assets/icons/headphone-logo.svg"
@@ -305,12 +305,12 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-pills m-auto justify-content-center pb-4" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link pricing_tab active" id="monthly-tab" data-bs-toggle="tab"
+                        <button class="nav-link pricing_tab active resizeButtonMonthly" id="monthly-tab" data-bs-toggle="tab"
                             data-bs-target="#monthly" type="button" role="tab" aria-controls="home"
                             aria-selected="true">Monthly</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link pricing_tab" id="yearly-tab" data-bs-toggle="tab"
+                        <button class="nav-link pricing_tab resizeButtonYearly" id="yearly-tab" data-bs-toggle="tab"
                             data-bs-target="#yearly" type="button" role="tab" aria-controls="profile"
                             aria-selected="false">Yearly</button>
                     </li>
@@ -757,8 +757,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 laptop-img">
-                    <img src="./assets/images/laptop-img.png" alt="" class="laptop-main-img" />
+                <div class="col-md-6 laptop-img laptopImageSticky">
+                    <img class="laptop-main-img laptopImage" src="./assets/images/laptop-img.png" alt=""  />
                 </div>
             </div>
         </div>
@@ -1084,7 +1084,7 @@
     <footer>
         <section class="footer pb-4">
             <div class="container">
-                <div class="row gap-3">
+                <div class="row gap-2">
 
                     <div class="footer_child1 col-md-4 text-center">
                         <img class="m-4" src="./assets/images/host-house-logo.svg" alt="" width="160px">
@@ -1145,10 +1145,16 @@
         <div class="d-block copyrightFooter">
             <section id="#copyright">
                 <div class="container">
-                    <div class=" d-flex justify-content-between">
+                    <row class=" d-flex justify-content-between flex-wrap">
+                        <div class="col-sm-6"> 
                         <p><img src="./assets/icons/cLogoIcon.svg" alt="" width="15px"> 2023 All Rights Reserved.</p>
-                        <p>Terms & Condition | Privacy Policy</p>
                     </div>
+
+                        <div class="col-sm-6 text-end "> 
+                            <p>Terms & Condition | Privacy Policy</p>
+                    </div>
+
+                    </row>
                 </div>
             </section>
         </div>
