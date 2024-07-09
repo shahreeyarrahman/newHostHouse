@@ -1,0 +1,311 @@
+/* font link  */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --ubunto: Ubuntu;
+    --raleway: Raleway;
+    --primary-font: "Ubuntu";
+    --secondary-font: "Raleway";
+    --primary: #483875;
+    --secondary-color:#F54646;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font) !important;
+
+}
+
+nav a {
+    font-family: var(--primary-font);
+    font-size: 16px !important;
+    margin-left: 30px;
+}
+
+.dropdown-menu a {
+    margin-left: 0px;
+    padding: 8px !important;
+}
+
+nav .login_button {
+    background-color: var(--primary);
+    color: white;
+    text-transform: uppercase;
+
+    padding: 5px 15px !important;
+    margin-left: 30px;
+}
+
+nav .login_button:hover {
+    border: solid 1px var(--primary);
+    color: var(--primary) !important;
+    text-transform: uppercase;
+
+}
+
+nav li a:hover {
+    color: var(--primary) !important;
+    background-color: var(--primary);
+    border-radius: 3px;
+    color: white !important;
+}
+
+.dropdown-menu a {
+    padding: 2px;
+}
+.dropdown-menu .dropdown-item:active{
+    background-color: var(--primary) !important;
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: rgb(255, 255, 255);
+        
+    }
+
+    nav .login_button {
+        margin-left: 0px;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px !important;
+        padding: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    nav ul li a {
+        text-align: center;
+        margin: 0 !important;
+        padding: 10px !important;
+
+    }
+
+    nav ul li {
+        margin-top: 15px;
+    }
+
+    .domainSearchForm1 {
+        padding: 0px 20px;
+    }
+}
+/* end navbar here  */
+
+/* START HERO SECTION   */
+#hero{
+    background: url("../image/abouteHeroImage.png");
+    width: 100%;
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* END HERO SECTION  */
+
+/* *******************mejor UPDATE */
+/* start footer section  */
+.footer {
+    width: 100%;
+    min-height: 450px;
+    background-color: #160E2F;
+    font-family: var(--ubunto);
+}
+
+.footer_child1 {
+    width: 30%;
+    color: white;
+}
+
+.domain-service {
+    width: 20%;
+    color: white;
+    text-transform: capitalize;
+}
+
+.footer p {
+    color: rgb(168, 168, 168) !important;
+    text-align: start;
+
+}
+
+/* finished home page  */
+
+/* copy Right */
+
+.copyrightFooter {
+    background-color: #FFDDDD;
+}
+
+.copyrightFooter p {
+    font-weight: 500;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+#copyright {
+    background-color: #FFDDDD !important;
+}
+
+/* *******************mejor */
+@media screen and (max-width:768px) {
+    .footerResponsiveFixing{
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+    }
+}
+
+/* START QUESTION SECTION  */
+.questionWrapper{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+}
+.questionBtn:focus{
+    background-color: #ffffff !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    color:var(--secondary-color);
+}
+.questionBtn{
+    background-color: #ffffff !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    color:var(--secondary-color);
+}
+.questionBtn:active{
+    background-color: #ffffff !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    color:var(--secondary-color);
+}
+
+/* END QUESTION SECTION  */
+
+/* START ABOUTE CSS HERE***  */
+
+/* START COMPANY AND STAF SECTION  */
+.companyWrapper{
+    width: 100%;
+    min-height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+.companyHeadingColorText1{
+    color: var(--primary);
+}
+.companyHeadingColorText2{
+    color: var(--secondary-color);
+}
+
+.companyContentOne img {
+    margin-top: 40px;
+}
+/* END COMPANY AND STAF SECTION  */
+
+/* START TRANSFER SECTION  */
+.transferContent{
+    width: 100%;
+    min-height: 340px;
+    background-color: rgb(255, 255, 255);
+}
+.transferCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;   
+    margin-bottom: 20px;   
+}
+.divOne{
+    width: 280px;
+    height: 280px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    
+}
+.divOne:hover{
+    box-shadow: 1px 1px 10px rgb(207, 207, 207);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .5s ;
+    background-color: #fff9f9;
+}
+@media screen and (max-width:768px) {
+    .divOne{
+        width: 90%;
+        height: auto;
+        padding: 5px;
+    }
+} 
+@media screen and (max-width:576px) {
+    .divOne{
+        width: 100%;
+        height: auto;
+    }
+} 
+/* END TRANSFER SECTION  */
+
+/* START SKILL SECTION */
+.skillWrapper{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+}
+.skillone{
+    width: 100%;
+    height: 10px;
+    background-color: #ffbdbd;
+    border-radius: 50px;
+}
+.skillIndeepth{
+    width: 80%;
+    height: 100%;
+    background-color:var(--secondary-color);
+    border-radius: 50px;
+}
+.skilltwo{
+    width: 100%;
+    height: 10px;
+    background-color: #d2c2ff;
+    border-radius: 50px;
+}
+.skillIndeepthtwo{
+    width: 70%;
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 50px;
+}
+@media screen and (max-width:768px) {
+    .skillContent{
+        width: 100% !important;
+        padding: 15px;
+    }
+}
+
+/* END SKILL SECTION */
+
+/* START EXPERT TEAM SECTION */
+.teamWrapper{
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(155, 155, 155);
+}
+/* END EXPERT TEAM SECTION */
+
+
+
+/* START ABOUTE CSS HERE***  */
