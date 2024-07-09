@@ -166,8 +166,8 @@ nav {
 }
 /* START PRICING CARD SECTION  */
 .circleContent{
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: var(--secondary-color);
     display: flex;
@@ -180,5 +180,161 @@ nav {
     background-color: var(--primary);
     color: white;
     text-transform: uppercase;
+    margin-top: 20PX;
+    transition: all .4s ease-in-out;
+}
+.pricingCardButton:hover{
+    background-color: white;
+    color:var(--primary);
+    outline: 1px solid var(--primary);
+    text-transform: uppercase;
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+
+.responsiveRows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0px 10px;
+}
+.pricingHeading{
+    width: 100%;
+    min-height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.bsResponsive{
+    width: 380px;
+}
+.bsResponsive:hover{
+    box-shadow: 1px 1px 10px rgb(223, 223, 223);
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 8px;
+}
+.circleContentText h3,p{
+    margin: 0 !important;
+    padding: 0 !important;
 }
 /* END PRICING CARD SECTION  */
+/* START DOMAIN FEATURES SECTION  */
+.domainFeaturesContent{
+    width: 100%;
+    min-height: auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.divOne{
+    width: 380px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    
+}
+.divOne:hover{
+    box-shadow: 1px 1px 10px rgb(207, 207, 207);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .5s ;
+    background-color: #fff9f9;
+}
+.domainFeaturesMargin{
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+}
+/* END DOMAIN FEATURES SECTION  */
+
+/* START TRANSFER SECTION  */
+.transferContent{
+    width: 100%;
+    min-height: 340px;
+    background-color: rgb(255, 255, 255);
+}
+.transferCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;   
+    margin-bottom: 20px;   
+}
+/* END TRANSFER SECTION  */
+
+/* START QUESTION SECTION  */
+.questionWrapper{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+}
+.questionBtn:focus{
+    background-color: #ffffff !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    color:var(--secondary-color);
+}
+.questionBtn{
+    background-color: #ffffff !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    color:var(--secondary-color);
+}
+.questionBtn:active{
+    background-color: #ffffff !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    color:var(--secondary-color);
+}
+
+/* END QUESTION SECTION  */
+
+/* START GUARENTEE SECTION  */
+#guarentee{
+    width: 100%;
+    min-height: 400px;
+    background-color: #EAE2FF;
+    margin-top: 100px;
+    
+}
+.questionHeadingText{
+    color: var(--secondary-color);
+}
+.guarenteeBtn{
+    background-color: var(--primary);
+    text-transform: capitalize;
+    color: white;
+}
+.guarenteeBtn:hover{
+    
+    text-transform: capitalize;
+    color: var(--primary);
+    transform: scale(1.1);
+    border: 1px solid var(--primary);
+    transition: all .5s ease-in-out;
+}
+.guarenteeBtn{
+    transition: all 1s ease-in-out ;
+}
+
+.guarenteeWrapper{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.guarentyPtext{
+    color: var(--secondary-color) !important;
+}
+/* END GUARENTEE SECTION  */
