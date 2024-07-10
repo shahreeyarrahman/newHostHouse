@@ -10,6 +10,8 @@
   --secondary-font: "Raleway";
   --primary: #483875;
   --secondary-color: #f54646;
+  --shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  --shadowBG: #fffdfd;
 }
 
 * {
@@ -59,7 +61,7 @@ nav li a:hover {
   background-color: var(--primary) !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   nav {
     position: fixed !important;
     top: 0;
@@ -143,7 +145,8 @@ nav li a:hover {
 
 .copyrightFooter p {
   font-weight: 500;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0px 10px;
 }
 
@@ -183,11 +186,11 @@ nav li a:hover {
   margin-top: 10px;
 }
 .divOne:hover {
-  box-shadow: 1px 1px 10px rgb(207, 207, 207);
+  box-shadow: var(--shadow);
+  background-color: var(--shadowBG);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.5s;
-  background-color: #fff9f9;
 }
 @media screen and (max-width: 768px) {
   .divOne {
@@ -224,9 +227,9 @@ nav li a:hover {
   border: 1px solid var(--primary);
   transform: scale(1.1);
 }
-.numberCardParent{
-    display: flex;
-    justify-content: center;
+.numberCardParent {
+  display: flex;
+  justify-content: center;
 }
 /* END NUMBER SECTION  */
 
@@ -363,76 +366,75 @@ nav li a:hover {
 /* END MAP SECTION  */
 
 /* START CONTACT FORM SECTION  */
-.formWrapper{
-    min-height: 500px;
-    background-color: rgb(255, 255, 255);
+.formWrapper {
+  min-height: 500px;
+  background-color: rgb(255, 255, 255);
 }
-.formParent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.formParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.formContent input{
-    width: 100% !important;
-    padding: 10px;
-    border: 2px solid var(--secondary-color) !important;
-    border-radius: 6px;
-    margin-top: 20px;
-    
+.formContent input {
+  width: 100% !important;
+  padding: 10px;
+  border: 2px solid var(--secondary-color) !important;
+  border-radius: 6px;
+  margin-top: 20px;
 }
-.selectInput{
-    width: 100% !important;
-    padding: 13px;
-    border: 2px solid var(--secondary-color) !important;
-    border-radius: 6px;
-    margin-top: 20px;
+.selectInput {
+  width: 100% !important;
+  padding: 13px;
+  border: 2px solid var(--secondary-color) !important;
+  border-radius: 6px;
+  margin-top: 20px;
 }
-.formTextarea{
-    width: 100% !important;
-    height: 150px;
-    padding: 13px;
-    border: 2px solid var(--secondary-color) !important;
-    border-radius: 6px;
+.formTextarea {
+  width: 100% !important;
+  height: 150px;
+  padding: 13px;
+  border: 2px solid var(--secondary-color) !important;
+  border-radius: 6px;
 }
-.formCheakboxWrapper input{
-    width: 40px !important;
+.formCheakboxWrapper input {
+  width: 40px !important;
 }
-.formCheakbox{
-    height: 25px;
-    margin: 0 !important;
-    padding: 0 !important;
+.formCheakbox {
+  height: 25px;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-.cheakboxText{
-    padding-left: 2px !important;
-    margin-top:15px !important;
+.cheakboxText {
+  padding-left: 2px !important;
+  margin-top: 15px !important;
 }
-.formContent{
-    width: 90%;
-    height: 100%;
+.formContent {
+  width: 90%;
+  height: 100%;
 }
 
 .formSubmitButton {
-    background-color: var(--primary) !important;
-    color: white !important;
-    margin-left: 10px !important;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .formSubmitButton:hover {
-    color: var(--primary) !important;
-    background-color: white !important;
-    border: 1px solid var(--primary);
-    transform: scale(1.1);
-  }
-  .selectOptionText{
-    color: red !important;
-  }
-  .adjustCheakbox{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    align-content: center;
-  }
+  background-color: var(--primary) !important;
+  color: white !important;
+  margin-left: 10px !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.formSubmitButton:hover {
+  color: var(--primary) !important;
+  background-color: white !important;
+  border: 1px solid var(--primary);
+  transform: scale(1.1);
+}
+.selectOptionText {
+  color: red !important;
+}
+.adjustCheakbox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+}
 /* END CONTACT FORM SECTION  */
 
 /* START CONTACT CSS HERE***  */
