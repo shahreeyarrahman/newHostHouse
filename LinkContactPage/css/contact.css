@@ -1,0 +1,438 @@
+/* font link  */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --ubunto: Ubuntu;
+  --raleway: Raleway;
+  --primary-font: "Ubuntu";
+  --secondary-font: "Raleway";
+  --primary: #483875;
+  --secondary-color: #f54646;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font) !important;
+}
+
+nav a {
+  font-family: var(--primary-font);
+  font-size: 16px !important;
+  margin-left: 30px;
+}
+
+.dropdown-menu a {
+  margin-left: 0px;
+  padding: 8px !important;
+}
+
+nav .login_button {
+  background-color: var(--primary);
+  color: white;
+  text-transform: uppercase;
+
+  padding: 5px 15px !important;
+  margin-left: 30px;
+}
+
+nav .login_button:hover {
+  border: solid 1px var(--primary);
+  color: var(--primary) !important;
+  text-transform: uppercase;
+}
+
+nav li a:hover {
+  color: var(--primary) !important;
+  background-color: var(--primary);
+  border-radius: 3px;
+  color: white !important;
+}
+
+.dropdown-menu a {
+  padding: 2px;
+}
+.dropdown-menu .dropdown-item:active {
+  background-color: var(--primary) !important;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+  }
+
+  nav .login_button {
+    margin-left: 0px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px !important;
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  nav ul li a {
+    text-align: center;
+    margin: 0 !important;
+    padding: 10px !important;
+  }
+
+  nav ul li {
+    margin-top: 15px;
+  }
+
+  .domainSearchForm1 {
+    padding: 0px 20px;
+  }
+}
+/* end navbar here  */
+
+/* START HERO SECTION   */
+#hero {
+  background: url("../image/contact-hero-image.png");
+  width: 100%;
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+/* END HERO SECTION  */
+
+/* *******************mejor UPDATE */
+/* start footer section  */
+.footer {
+  width: 100%;
+  min-height: 450px;
+  background-color: #160e2f;
+  font-family: var(--ubunto);
+}
+
+.footer_child1 {
+  width: 30%;
+  color: white;
+}
+
+.domain-service {
+  width: 20%;
+  color: white;
+  text-transform: capitalize;
+}
+
+.footer p {
+  color: rgb(168, 168, 168) !important;
+  text-align: start;
+}
+
+/* finished home page  */
+
+/* copy Right */
+
+.copyrightFooter {
+  background-color: #ffdddd;
+}
+
+.copyrightFooter p {
+  font-weight: 500;
+  padding: 10px;
+  margin: 0px 10px;
+}
+
+#copyright {
+  background-color: #ffdddd !important;
+}
+
+/* *******************mejor */
+@media screen and (max-width: 768px) {
+  .footerResponsiveFixing {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+}
+/* end footer section  */
+
+/* START TRANSFER SECTION  */
+.transferContent {
+  width: 100%;
+  min-height: 340px;
+  background-color: rgb(255, 255, 255);
+}
+.transferCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.divOne {
+  width: 280px;
+  height: 280px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+.divOne:hover {
+  box-shadow: 1px 1px 10px rgb(207, 207, 207);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #fff9f9;
+}
+@media screen and (max-width: 768px) {
+  .divOne {
+    width: 90%;
+    height: auto;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .divOne {
+    width: 100%;
+    height: auto;
+  }
+}
+/* END TRANSFER SECTION  */
+
+/* START CONTACT CSS HERE***  */
+
+/* START NUMBER SECTION  */
+.numberHeadingTextOne {
+  color: var(--secondary-color) !important;
+  text-shadow: -7px -7px 1px #eeb1b1;
+}
+.numberButton button {
+  background-color: var(--primary) !important;
+  color: white !important;
+  margin-left: 100px !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.numberButton button:hover {
+  color: var(--primary) !important;
+  background-color: white !important;
+  border: 1px solid var(--primary);
+  transform: scale(1.1);
+}
+.numberCardParent{
+    display: flex;
+    justify-content: center;
+}
+/* END NUMBER SECTION  */
+
+/* START CARD SECTION  */
+.contactcardImage img {
+  width: 50px;
+}
+.contactMainCard:hover {
+  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.contactMainCard {
+  background-color: var(--primary) !important;
+  color: white !important;
+  margin-top: 30px;
+}
+/* END CARD SECTION  */
+
+/* START MAP SECTION */
+.world-map {
+  width: 100%;
+  max-width: 1100px;
+  margin: 10px auto;
+  padding: 1em;
+  position: relative;
+}
+
+.world-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pin {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+.pin span {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  left: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(174, 106, 238);
+  border-radius: 3em;
+  padding: 0.5em 0.9em;
+  font-size: 1em;
+}
+
+.Germany {
+  top: 57%;
+  left: 17%;
+  cursor: pointer;
+}
+
+.india {
+  top: 80%;
+  left: 30%;
+  cursor: pointer;
+}
+
+.bangladesh {
+  top: 76%;
+  left: 34%;
+  cursor: pointer;
+}
+
+.Russia {
+  top: 44%;
+  left: 72%;
+  cursor: pointer;
+}
+
+.uk {
+  top: 44%;
+  left: 80%;
+  cursor: pointer;
+}
+
+.indonesia {
+  top: 81%;
+  left: 87%;
+  cursor: pointer;
+}
+
+/* Responsive map */
+@media screen and (max-width: 576px) {
+  .india {
+    top: 76%;
+    left: 29%;
+  }
+
+  .bangladesh {
+    top: 72%;
+    left: 33%;
+  }
+
+  .indonesia {
+    top: 78%;
+    left: 87%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Germany {
+    top: 50%;
+    left: 17%;
+  }
+
+  .bangladesh {
+    top: 68%;
+    left: 33%;
+  }
+
+  .indonesia {
+    top: 75%;
+    left: 85%;
+  }
+}
+
+.map-button {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* END MAP SECTION  */
+
+/* START CONTACT FORM SECTION  */
+.formWrapper{
+    min-height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+.formParent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formContent input{
+    width: 100% !important;
+    padding: 10px;
+    border: 2px solid var(--secondary-color) !important;
+    border-radius: 6px;
+    margin-top: 20px;
+    
+}
+.selectInput{
+    width: 100% !important;
+    padding: 13px;
+    border: 2px solid var(--secondary-color) !important;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.formTextarea{
+    width: 100% !important;
+    height: 150px;
+    padding: 13px;
+    border: 2px solid var(--secondary-color) !important;
+    border-radius: 6px;
+}
+.formCheakboxWrapper input{
+    width: 40px !important;
+}
+.formCheakbox{
+    height: 25px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.cheakboxText{
+    padding-left: 2px !important;
+    margin-top:15px !important;
+}
+.formContent{
+    width: 90%;
+    height: 100%;
+}
+
+.formSubmitButton {
+    background-color: var(--primary) !important;
+    color: white !important;
+    margin-left: 10px !important;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .formSubmitButton:hover {
+    color: var(--primary) !important;
+    background-color: white !important;
+    border: 1px solid var(--primary);
+    transform: scale(1.1);
+  }
+  .selectOptionText{
+    color: red !important;
+  }
+  .adjustCheakbox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+  }
+/* END CONTACT FORM SECTION  */
+
+/* START CONTACT CSS HERE***  */

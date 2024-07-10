@@ -366,3 +366,113 @@
                     </div>
                 </div>
                 <!--⁡⁢⁣⁢ tabs content ⁡ -->
+
+
+                <!-- START TRANSFER section -->
+        <section id="Transfer">
+            <div class="container">
+                <div class="transferContent">
+                    <div class="transferHeading text-center">
+                        <h2 class="fw-bold text-capitalize pt-5">Pick You perfect web hosting plan</h2>
+                        <p class=""> we keep the terms simple</p>
+                    </div>
+                    <div class="transferCard">
+                        <div class="divOne">
+                            <div class="divOneHeading text-center">
+                                <img src="./icon/aboute-webHosting.svg" alt="" width="120px">
+                                <h4 class="text-capitalize pt-4 "> Web hosting  </h4>
+                                <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, accusantium!</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="divOne">
+                            <div class="divOneHeading py-3 text-center">
+                                <img src="./icon/vecaboute-resellerHosting.svg" alt="" width="140px">
+                                <h4 class="text-capitalize pt-4 "> reseller hosting   </h4>
+                                <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, accusantium!</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="divOne">
+                            <div class="divOneHeading text-center">
+                                <img src="./icon/aboute-dedicated.svg" alt="" width="180px">
+                                <h4 class="text-capitalize pt-4"> dedicated </h4>
+                                <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, accusantium!</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="divOne">
+                            <div class="divOneHeading text-center">
+                                <img src="./icon/aboute-VPS.svg" alt="">
+                                <h4 class="text-capitalize pt-4"> VPS </h4>
+                                <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, accusantium!</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+          </section>
+         <!-- END TRANSFER section -->
+
+
+         card problem solving **************************
+          <!-- START CARD section -->
+         <section id="card">
+            <div class="container my-5">
+                <div class="cardParent">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="cardContent">
+                                <!--  -->
+                                <div class="card contactMainCard text-center" style="width: 100%;">
+                                <div class="contactcardImage text-center"> 
+                                    <img src="./icon/contact-massege-icone.svg" class="card-img-top pt-3" alt="...">
+                                </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title p-2 fw-bold">Chat Live</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div> 
+                                <!--  -->
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-md-4">
+                            <div class="cardContent">
+                                <!--  -->
+                                <div class="card contactMainCard text-center " style="width: 100%;">
+                                <div class="contactcardImage text-center"> 
+                                    <img src="./icon/contact-call-icone.svg" class="card-img-top pt-3" alt="...">
+                                </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title p-2 fw-bold">Chat Live</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div> 
+                                <!--  -->
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="col-md-4">
+                            <div class="cardContent">
+                                <!--  -->
+                                <div class="card contactMainCard text-center " style="width: 100%;">
+                                <div class="contactcardImage text-center"> 
+                                    <img src="./icon/contact-FAQ-icone.svg" class="card-img-top  pt-3" alt="...">
+                                </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title p-2 fw-bold">Chat Live</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div> 
+                                <!--  -->
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- END CARD section -->
+          card problem solving **************************
