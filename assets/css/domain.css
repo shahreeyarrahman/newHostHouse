@@ -99,7 +99,7 @@ nav li a:hover {
 #hero {
   background: url("../LinkDomainPage/image/domainHeroImage.png");
   width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
   background-size: cover;
   background-position: center;
   display: flex;
