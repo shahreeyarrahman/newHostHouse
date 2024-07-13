@@ -310,11 +310,11 @@ nav li a:hover {
   font-family: var(--ubunto);
 }
 
-.laptop-img {
+/* .laptop-img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .pannel-card1 {
@@ -641,13 +641,22 @@ nav li a:hover {
   color: #fff !important;
 }
 
-.resizeButtonMonthly {
+.nav-item:nth-child(1) .pricing_tab {
+  border-radius: 10px 0 0 10px !important;
+}
+
+.nav-item:nth-child(2) .pricing_tab {
+  border-radius: 0 10px 10px 0 !important;
+}
+
+
+/* .resizeButtonMonthly {
   border-radius: 10px 0 0 10px !important;
 }
 
 .resizeButtonYearly {
   border-radius: 0 10px 10px 0 !important;
-}
+} */
 
 /* Imtiaz's Tab Code */
 
@@ -781,6 +790,6 @@ nav li a:hover {
 
 .laptopImage {
   position: sticky;
-  top: 0;
+  top: 120px;
   left: 0;
 }
