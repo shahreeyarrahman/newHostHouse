@@ -97,9 +97,9 @@ nav li a:hover {
 /* end navbar here  */
 /* start Hero sectinon here  */
 #hero {
-  background: url("../../LinkDomainPage/image/domainHeroImage.png");
+  background: url("../LinkDomainPage/image/domainHeroImage.png");
   width: 100%;
-  min-height: 70vh;
+  min-height: 80vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -107,6 +107,13 @@ nav li a:hover {
   align-items: center;
   align-content: center;
 }
+
+.heroHeadingtext{
+  width: 100%;
+  height: 100%;
+  margin-top: 100px !important;
+}
+
 /* end Hero sectinon here  */
 
 /* *******************mejor */
@@ -242,6 +249,7 @@ p {
   height: 150px;
   background-color: rgb(255, 255, 255);
   padding: 10px;
+  text-align: center;
 }
 .divOne:hover {
   box-shadow: var(--shadow);
@@ -259,6 +267,85 @@ p {
     width: 100% !important;
   }
 }
+
+/*  start transferCirle section*/
+.transferCirle{
+ width: 40px;
+ height: 40px;
+  background-color:#ff3838;
+  border-radius: 50px; 
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.LineDroWrapper{
+  position: relative;
+ 
+}
+.drowLine{
+  max-width: 383px;
+  height: 10px;
+  background-color: rebeccapurple;
+  position: absolute;
+  top: 27px;
+  left: 249px;
+}
+.drowLine2{
+  width: 383px;
+  height: 10px;
+  background-color: rebeccapurple;
+  position: absolute;
+  top: 27px;
+  right: 248px;
+}
+
+@media screen and (max-width:768px) {
+  .LineDroWrapper{
+    display: none;
+  }
+}
+@media screen and (max-width:992px) {
+  .drowLine2, .drowLine{
+    width: 373px;
+  }
+}
+@media screen and (min-width:992px) {
+  .drowLine2{
+    width: 580px;
+  }
+  .drowLine{
+    max-width: 573px;
+    height: 10px;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 27px;
+    left: 249px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .drowLine2{
+    width: 680px;
+  }
+  .drowLine{
+    max-width: 673px;
+    height: 10px;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 27px;
+    left: 249px;
+  }
+}
+
+
+
+/*  end transferCirle section*/
+
+
+
 /* END DOMAIN FEATURES SECTION  */
 
 /* START TRANSFER SECTION  */

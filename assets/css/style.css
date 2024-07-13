@@ -107,15 +107,22 @@ nav li a:hover {
 
 @media screen and (max-width: 768px) {
   .hero {
-    height: 100vh;
+    height: 85vh;
+  
   }
 
   .heroButtons button {
     font-size: 15px !important;
     width: auto;
-    height: 50px;
-    padding: 10px !important;
+    height: auto;
+    padding: 5px !important;
   }
+
+  .fadeInUp h1{
+    font-size:20px!important;
+    margin-top: -200px !important;
+    
+ }
 }
 
 /* start DomainSearch section  */
@@ -310,11 +317,6 @@ nav li a:hover {
   font-family: var(--ubunto);
 }
 
-/* .laptop-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 @media screen and (max-width: 768px) {
   .pannel-card1 {
@@ -533,10 +535,14 @@ nav li a:hover {
 }
 
 .domainSearchForm2 input:focus {
-  outline: 0 !important;
   box-shadow: none !important;
-  border: none !important;
+  border: .5px solid rgb(195, 195, 195) !important;
 }
+
+.input-group-text{
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 768px) {
   .subscribe-input input {
@@ -649,15 +655,6 @@ nav li a:hover {
   border-radius: 0 10px 10px 0 !important;
 }
 
-
-/* .resizeButtonMonthly {
-  border-radius: 10px 0 0 10px !important;
-}
-
-.resizeButtonYearly {
-  border-radius: 0 10px 10px 0 !important;
-} */
-
 /* Imtiaz's Tab Code */
 
 /* my code */
@@ -666,20 +663,6 @@ nav li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.heroHeadingText {
-  font-size: clamp(20px, 4vw, 50px) !important;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-
-.heroHeadingText span {
-  color: white;
-  opacity: 0;
-  transform: translate(-300px, 0) scale(0);
-  animation: animatedtext 5s forwards;
-  display: inline-block;
 }
 
 .text-area span:nth-of-type(2) {
@@ -793,3 +776,37 @@ nav li a:hover {
   top: 120px;
   left: 0;
 }
+
+/*start heroSectionFixing */
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.fadeInUp h1{
+   font-size:3vw;
+   margin: 0 !important;
+   padding: 0 !important;
+}
+
+/* end heroSectionFixing */
