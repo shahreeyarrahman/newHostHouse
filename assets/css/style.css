@@ -153,8 +153,8 @@ nav li a:hover {
 .feature_content form input:focus {
   background-color: #ffdddd;
   outline: none;
-  padding-left: 40px;
-  transition: all 1s;
+  padding-left: 30px;
+  transition: all .4s;
 }
 
 .domainSearchForm1 input:focus {
@@ -581,9 +581,26 @@ nav li a:hover {
   text-transform: capitalize;
 }
 
+.domain-service a{
+  text-decoration: none;
+  color: #bab8b8;
+}
+.domain-service a:hover{
+  color: #ffffff;
+}
+
+.callerfixing, .mailFixing{
+  cursor: pointer;
+}
+
+
 .footer p {
   color: rgb(168, 168, 168) !important;
   text-align: start;
+}
+
+.footer-img a{
+  text-decoration: none;
 }
 
 /* finished home page  */
@@ -633,6 +650,10 @@ nav li a:hover {
 
 #copyright {
   background-color: #ffdddd !important;
+}
+.tramsAndCondition a {
+  text-decoration: none;
+  color: rgb(43, 43, 43);
 }
 
 /* Imtiaz's Tab Code */

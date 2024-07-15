@@ -136,10 +136,40 @@ nav li a:hover {
   text-transform: capitalize;
 }
 
+.domain-service a{
+  text-decoration: none;
+  color: #bab8b8;
+}
+.domain-service a:hover{
+  color: #ffffff;
+}
+
+.callerfixing, .mailFixing{
+  cursor: pointer;
+}
+
+.tramsAndCondition a {
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+  padding: 10px;
+  display: block;
+}
+
 .footer p {
   color: rgb(168, 168, 168) !important;
   text-align: start;
 }
+
+.footer-img a{
+  text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+  .domain-service{
+    width: 100%;
+  }
+}
+
 
 /* finished home page  */
 
@@ -158,6 +188,10 @@ nav li a:hover {
 
 #copyright {
   background-color: #ffdddd !important;
+}
+
+.copyRightRow{
+  padding: 20px !important;
 }
 
 /* *******************mejor */
@@ -386,15 +420,36 @@ nav li a:hover {
   padding: 10px;
   border: 2px solid var(--secondary-color) !important;
   border-radius: 6px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
+.formContent input:focus {
+  border:2px solid #000000 !important;
+  transition: all .3s ease-in-out;
+  outline: none !important;
+  
+}
+
+.formContent .selectInput:focus {
+  border:2px solid #000000 !important;
+  transition: all .3s ease-in-out;
+  outline: none !important;
+  
+}
+.formContent .formTextarea:focus {
+  border:2px solid #000000 !important;
+  transition: all .3s ease-in-out;
+  outline: none !important;
+  
+}
+
 .selectInput {
   width: 100% !important;
   padding: 13px;
   border: 2px solid var(--secondary-color) !important;
   border-radius: 6px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
+
 .formTextarea {
   width: 100% !important;
   height: 150px;
@@ -422,8 +477,9 @@ nav li a:hover {
 .formSubmitButton {
   background-color: var(--primary) !important;
   color: white !important;
-  margin-left: 10px !important;
+  margin-left: 0px !important;
   transition: all 0.5s ease-in-out;
+  margin-top: 40px !important;
 }
 
 .formSubmitButton:hover {
@@ -435,12 +491,28 @@ nav li a:hover {
 .selectOptionText {
   color: red !important;
 }
-.adjustCheakbox {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  align-content: center;
+
+.adjustCheakboxResize input{
+  width: 20px !important;
+  height: 10px !important;
+  border: 1px solid var(--secondary-color) !important;
 }
+.adjustCheakboxResize input:focus{
+  width: 20px !important;
+  height: 10px !important;
+  border: 1px solid black !important;
+  box-shadow: none !important;
+}
+@media screen and (max-width:768px) {
+  .formContent input{
+    margin-top: 20px;
+  }
+}
+
+.selectInput option {
+  width: 100px !important;
+}
+
 /* END CONTACT FORM SECTION  */
 
 /* START CONTACT CSS HERE***  */

@@ -136,10 +136,39 @@ nav li a:hover {
   text-transform: capitalize;
 }
 
+.domain-service a{
+  text-decoration: none;
+  color: #bab8b8;
+  
+}
+.domain-service p{
+  
+  padding-top: 10px !important;
+  
+}
+.domain-service a:hover{
+  color: #ffffff;
+}
+
+.callerfixing, .mailFixing{
+  cursor: pointer;
+}
+
 .footer p {
   color: rgb(168, 168, 168) !important;
   text-align: start;
 }
+.footer-img a{
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:768px) {
+  .domain-service{
+    width: 100%;
+  }
+}
+
 
 /* finished home page  */
 
@@ -158,6 +187,11 @@ nav li a:hover {
 #copyright {
   background-color: #ffdddd !important;
 }
+
+.tramsAndCondition a {
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+} 
 
 /* *******************mejor */
 @media screen and (max-width: 768px) {
@@ -211,7 +245,7 @@ nav li a:hover {
 }
 
 .bsResponsive {
-  width: 380px;
+  width: 340px;
 }
 .bsResponsive:hover {
   box-shadow: var(--shadow);
@@ -245,8 +279,8 @@ p {
   gap: 30px;
 }
 .divOne {
-  width: 380px;
-  height: 160px;
+  width: 330px;
+  height: auto;
   background-color: rgb(255, 255, 255);
   padding: 10px;
 }
@@ -269,11 +303,11 @@ p {
 
 /*  start transferCirle section*/
 .transferCirle{
- width: 40px;
- height: 40px;
+ width: 30px;
+ height: 30px;
   background-color:#ff3838;
   border-radius: 50px; 
-  padding: 30px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -287,19 +321,19 @@ p {
 }
 .drowLine{
   max-width: 383px;
-  height: 10px;
+  height: 5px;
   background-color: rebeccapurple;
   position: absolute;
-  top: 27px;
-  left: 249px;
+  top: 20px;
+  left: 240px;
 }
 .drowLine2{
   width: 383px;
-  height: 10px;
+  height: 5px;
   background-color: rebeccapurple;
   position: absolute;
-  top: 27px;
-  right: 248px;
+  top: 20px;
+  right: 240px;
 }
 
 @media screen and (max-width:768px) {
@@ -318,24 +352,24 @@ p {
   }
   .drowLine{
     max-width: 573px;
-    height: 10px;
+    height: 5px;
     background-color: rebeccapurple;
     position: absolute;
-    top: 27px;
-    left: 249px;
+    top: 20px;
+    left: 240px;
   }
 }
 @media screen and (min-width:1200px) {
   .drowLine2{
-    width: 680px;
+    width: 720px;
   }
   .drowLine{
-    max-width: 673px;
-    height: 10px;
+    max-width: 758px;
+    height: 5px;
     background-color: rebeccapurple;
     position: absolute;
-    top: 27px;
-    left: 249px;
+    top: 20px;
+    left: 210px;
   }
 }
 
@@ -355,7 +389,7 @@ p {
 }
 .transferCard {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;

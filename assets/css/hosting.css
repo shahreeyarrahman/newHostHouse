@@ -384,10 +384,27 @@ nav li a:hover {
   text-transform: capitalize;
 }
 
+.domain-service a{
+  text-decoration: none;
+  color: #bab8b8;
+}
+.domain-service a:hover{
+  
+  color: #ffffff;
+}
+
+.callerfixing, .mailFixing{
+  cursor: pointer;
+}
+
 .footer p {
   color: rgb(168, 168, 168) !important;
   text-align: start;
 }
+.footer-img a{
+  text-decoration: none;
+}
+
 
 /* finished home page  */
 .unlimitedPricingCard {
@@ -434,4 +451,8 @@ nav li a:hover {
   background-color: #ffdddd !important;
 }
 
+.tramsAndCondition a {
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+}
 /* *******************mejor */

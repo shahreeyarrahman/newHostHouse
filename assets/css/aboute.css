@@ -137,10 +137,39 @@ nav li a:hover {
   text-transform: capitalize;
 }
 
+.domain-service {
+  width: 20%;
+  color: white;
+  text-transform: capitalize;
+}
+
+.domain-service a{
+  text-decoration: none;
+  color: #bab8b8;
+}
+.domain-service a:hover{
+  color: #ffffff;
+}
+
+.callerfixing, .mailFixing{
+  cursor: pointer;
+}
+
 .footer p {
   color: rgb(168, 168, 168) !important;
   text-align: start;
 }
+
+.footer-img a{
+  text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+  .domain-service{
+    width: 100%;
+  }
+}
+
 
 /* finished home page  */
 
@@ -158,6 +187,11 @@ nav li a:hover {
 
 #copyright {
   background-color: #ffdddd !important;
+}
+
+.tramsAndCondition a {
+  text-decoration: none;
+  color: rgb(43, 43, 43);
 }
 
 /* *******************mejor */
@@ -219,7 +253,7 @@ nav li a:hover {
 }
 /* END COMPANY AND STAF SECTION  */
 
-/* START TRANSFER SECTION  */
+/* START WEB HOSTING  SECTION  */
 .transferContent {
   width: 100%;
   min-height: 340px;
@@ -235,11 +269,13 @@ nav li a:hover {
   margin-bottom: 20px;
 }
 .divOne {
-  width: 280px;
-  height: 280px;
+  width: 240px;
+  height: 250px;
   background-color: rgb(255, 255, 255);
   margin-top: 10px;
 }
+
+
 .divOne:hover {
   box-shadow: var(--shadow);
   background-color: var(--shadowBG);
@@ -260,7 +296,7 @@ nav li a:hover {
     height: auto;
   }
 }
-/* END TRANSFER SECTION  */
+/* END WEB HOSTING  SECTION  */
 
 /* START SKILL SECTION */
 .skillWrapper {

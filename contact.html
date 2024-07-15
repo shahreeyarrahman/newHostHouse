@@ -371,7 +371,8 @@
                 <div class="row mt-5">
                   <div class="col-md-6">
                     <select class="selectInput" name="selection" id="">
-                      <option value="car">Subject</option>
+                      <option value="car">Subject1</option>
+                      <option value="car">Subject2</option>
                     </select>
                   </div>
                   <div class="col-md-6">
@@ -394,17 +395,14 @@
                   </div>
                   <div class="col-md-6 formCheakboxWrapper">
                     <div class="">
-                      <div class="adjustCheakbox">
-                        <input
-                          class="formCheakbox"
-                          type="checkbox"
-                          width="300px"
-                          placeholder="Email"
-                        />
-                        <p class="cheakboxText">
-                          I have read and accept the turm and the privacy
-                          policy.
-                        </p>
+                      <div class="adjustCheakbox mt-3">
+                        <!-- ********************************************** -->
+                        <form action="#">
+                          <div class="form-check adjustCheakboxResize ">
+                            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                            <label class="form-check-label ps-2" for="check1"> I have read and accept the turm and the privacy policy.</label>
+                          </div>
+                        </form>
                       </div>
 
                       <p>
@@ -427,11 +425,11 @@
       <footer>
         <section class="footer pb-4">
           <div class="container">
-            <div class="row">
+            <div class="row  copyRightRow">
               <div class="col-md-4 gap-5 ps-3">
                 <img
                   class="m-4"
-                  src="./icon/host-house-logo.svg"
+                  src="./assets/images/host-house-logo.svg"
                   alt=""
                   width="160px"
                 />
@@ -443,10 +441,25 @@
                 </p>
 
                 <div class="footer-img text-center mt-5">
-                  <img src="./assets/LinkContactPage/icon/fb-icone.svg" alt="" width="30px" />
-                  <img src="./assets/LinkContactPage/icon/twtter-icon.svg" alt="" width="30px" />
-                  <img src="./assets/LinkContactPage/icon/linkdin-icone.svg" alt="" width="30px" />
-                  <img src="./assets/LinkContactPage/icon/instagram-icon.svg" alt="" width="30px" />
+                  <a href="#"> 
+                    <img src="./assets/icons/fb-icone.svg" alt="" width="30px" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/icons/twtter-icon.svg" alt="" width="30px" />
+                    </a>
+                    <a href="#">
+                    <img
+                      src="./assets/icons/linkdin-icone.svg"
+                      alt=""
+                      width="30px"
+                    />
+                    </a>
+                    <a href="#">
+                    <img
+                      src="./assets/icons/instagram-icon.svg"
+                      alt=""
+                      width="30px"
+                    /> </a>
                 </div>
                 <div class="payment-method text-center">
                   <h4 class="py-4 text-light">Payment Method</h4>
@@ -460,34 +473,34 @@
                 </div>
               </div>
 
-              <div class="col-md-2 mt-5 ms-2 text-capitalize">
+              <div class="col-md-2 mt-5 ms-2 text-capitalize domain-service">
                 <h6 class="text-light">Domain service</h6>
-                <p class="pt-2">Domain registration</p>
-                <p class="pt-2">Domain Transfer</p>
+                <p> <a class="text-nowrap" href="#">  domain registration </a> </p>
+                <p> <a class="text-nowrap" href="#"> domain Transfer</a> </p>
               </div>
               <!--  -->
-              <div class="col-md-2 mt-5 ms-2 text-capitalize">
+              <div class="col-md-2 mt-5 ms-2 text-capitalize domain-service">
                 <h6 class="text-light">company</h6>
-                <p class="pt-2">aboute us</p>
-                <p class="pt-2">blog</p>
-                <p class="pt-2">oure data contars</p>
-                <p class="pt-2">contact us</p>
-                <p class="pt-2">award and reveiw</p>
+                <p> <a class="text-nowrap" href="#"> aboute us</a> </p>
+                <p> <a class="text-nowrap" href="#"> blog</a> </p>
+                <p> <a class="text-nowrap" href="#"> oure data contars</a> </p>
+                <p> <a class="text-nowrap" href="#"> contact us</a> </p>
+                <p> <a class="text-nowrap" href="#"> award and reveiw</a> </p>
               </div>
               <!--  -->
-              <div class="col-md-2 mt-5 ms-2">
+              <div class="col-md-2 mt-5 ms-2 domain-service">
                 <h6 class="text-light">support</h6>
                 <div class="callerfixing d-flex pt-2">
                   <p class="me-3">
                     <img src="./assets/LinkContactPage/icon/phone-icone.svg" alt="" />
                   </p>
-                  <p>+275 451 6245</p>
+                  <p> <a href="#" class=text-nowrap>  +275 451 6245  </a> </p>
                 </div>
                 <div class="mailFixing d-flex pt-2">
                   <p class="me-3">
                     <img src="./assets/LinkContactPage/icon/mailbox.svg" alt="" width="30px" />
                   </p>
-                  <p>support@gmail.com</p>
+                  <p> <a href="#" class=text-nowrap>  support@gmail.com </a> </p>
                 </div>
               </div>
             </div>
@@ -501,14 +514,15 @@
             <div class="container">
               <row class="d-flex justify-content-between flex-wrap">
                 <div class="col-sm-6">
-                  <p>
-                    <img src="./icon/cLogoIcon.svg" alt="" width="15px" /> 2023
+                  <p class="pt-4">
+                    <img src="./icon/cLogoIcon.svg" alt="" width="15px" />
+                     2023
                     All Rights Reserved.
                   </p>
                 </div>
 
-                <div class="col-sm-6 text-end">
-                  <p>Terms & Condition | Privacy Policy</p>
+                <div class="col-sm-6 text-end tramsAndCondition">
+                  <p> <a href="#">  Terms & Condition | Privacy Policy </a></p>
                 </div>
               </row>
             </div>
