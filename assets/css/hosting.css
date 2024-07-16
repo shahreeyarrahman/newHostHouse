@@ -341,9 +341,9 @@ nav li a:hover {
   background-color: #483875;
 }
 
-.domainSearchForm2 input:focus {
+.subscribe-content input:focus {
   box-shadow: none !important;
-  border: .5px solid rgb(195, 195, 195) !important;
+  border: .5px solid rgb(181, 181, 181) !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -361,6 +361,10 @@ nav li a:hover {
 
   .location-text {
     margin-bottom: -50px !important;
+  }
+
+  .subscribe-content form {
+    width: 100% !important;
   }
 }
 
@@ -405,6 +409,14 @@ nav li a:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width:768px) {
+  .domain-service{
+    width: 100%;
+  }
+  .fixingHostingFooter{
+    width: 100%;
+  }
+}
 
 /* finished home page  */
 .unlimitedPricingCard {
@@ -456,3 +468,18 @@ nav li a:hover {
   color: rgb(43, 43, 43);
 }
 /* *******************mejor */
+
+/* Back to top button  */
+.BTbtn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: white ;
+  border: 3px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}

@@ -534,9 +534,9 @@ nav li a:hover {
   background-color: #483875;
 }
 
-.domainSearchForm2 input:focus {
+.subscribe-content input:focus {
   box-shadow: none !important;
-  border: .5px solid rgb(195, 195, 195) !important;
+  border: .5px solid rgb(181, 181, 181) !important;
 }
 
 .input-group-text{
@@ -559,6 +559,9 @@ nav li a:hover {
 
   .location-text {
     margin-bottom: -50px !important;
+  }
+  .subscribe-content form {
+    width: 100% !important;
   }
 }
 
@@ -831,3 +834,19 @@ nav li a:hover {
 }
 
 /* end heroSectionFixing */
+
+/* Back to top button  */
+.BTbtn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: white ;
+  border: 3px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+

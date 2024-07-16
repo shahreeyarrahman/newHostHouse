@@ -321,7 +321,7 @@ p {
 }
 .drowLine{
   max-width: 383px;
-  height: 5px;
+  height: 3px;
   background-color: rebeccapurple;
   position: absolute;
   top: 20px;
@@ -329,7 +329,7 @@ p {
 }
 .drowLine2{
   width: 383px;
-  height: 5px;
+  height: 3px;
   background-color: rebeccapurple;
   position: absolute;
   top: 20px;
@@ -352,7 +352,7 @@ p {
   }
   .drowLine{
     max-width: 573px;
-    height: 5px;
+    height: 3px;
     background-color: rebeccapurple;
     position: absolute;
     top: 20px;
@@ -365,7 +365,7 @@ p {
   }
   .drowLine{
     max-width: 758px;
-    height: 5px;
+    height: 3px;
     background-color: rebeccapurple;
     position: absolute;
     top: 20px;
@@ -451,3 +451,19 @@ p {
   color: var(--secondary-color) !important;
 }
 /* END GUARENTEE SECTION  */
+
+/* Back to top button  */
+.BTbtn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: white ;
+  border: 3px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
