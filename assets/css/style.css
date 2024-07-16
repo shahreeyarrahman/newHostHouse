@@ -523,7 +523,7 @@ nav li a:hover {
 /* start subscribe section  */
 .subscribe {
   background: url(../images/subscribe-img.png) no-repeat;
-  height: 300px;
+  height: 250px;
   width: 100%;
   background-position: center;
   background-size: cover;

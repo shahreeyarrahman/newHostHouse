@@ -327,47 +327,6 @@ nav li a:hover {
 }
 /* END RATING SECTION */
 
-/* start subscribe section  */
-.subscribe {
-  background: url(../images/subscribe-img.png) no-repeat;
-  height: 300px;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  font-family: var(--ubunto);
-}
-
-.subscribe-input span {
-  background-color: #483875;
-}
-
-.subscribe-content input:focus {
-  box-shadow: none !important;
-  border: .5px solid rgb(181, 181, 181) !important;
-}
-
-@media screen and (max-width: 768px) {
-  .subscribe-input input {
-    width: 100% !important;
-  }
-
-  .subscribe-input span {
-    font-size: small !important;
-  }
-
-  .subscribe-input {
-    width: 100%;
-  }
-
-  .location-text {
-    margin-bottom: -50px !important;
-  }
-
-  .subscribe-content form {
-    width: 100% !important;
-  }
-}
-
 /* start footer section  */
 .footer {
   width: 100%;
