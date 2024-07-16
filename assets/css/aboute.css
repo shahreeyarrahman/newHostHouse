@@ -57,6 +57,7 @@ nav li a:hover {
 .dropdown-menu a {
   padding: 2px;
 }
+
 .dropdown-menu .dropdown-item:active {
   background-color: var(--primary) !important;
 }
@@ -94,6 +95,7 @@ nav li a:hover {
     padding: 0px 20px;
   }
 }
+
 /* end navbar here  */
 
 /* START HERO SECTION   */
@@ -109,7 +111,7 @@ nav li a:hover {
   align-content: center;
 }
 
-.heroHeadingtext{
+.heroHeadingtext {
   width: 100%;
   height: 100%;
   margin-top: 100px !important;
@@ -143,15 +145,17 @@ nav li a:hover {
   text-transform: capitalize;
 }
 
-.domain-service a{
+.domain-service a {
   text-decoration: none;
   color: #bab8b8;
 }
-.domain-service a:hover{
+
+.domain-service a:hover {
   color: #ffffff;
 }
 
-.callerfixing, .mailFixing{
+.callerfixing,
+.mailFixing {
   cursor: pointer;
 }
 
@@ -160,12 +164,12 @@ nav li a:hover {
   text-align: start;
 }
 
-.footer-img a{
+.footer-img a {
   text-decoration: none;
 }
 
 @media screen and (max-width:768px) {
-  .domain-service{
+  .domain-service {
     width: 100%;
   }
 }
@@ -209,6 +213,7 @@ nav li a:hover {
   min-height: 100px;
   background-color: rgb(255, 255, 255);
 }
+
 .questionBtn:focus {
   background-color: #ffffff !important;
   border: 0 !important;
@@ -216,6 +221,7 @@ nav li a:hover {
   box-shadow: none !important;
   color: var(--secondary-color);
 }
+
 .questionBtn {
   background-color: #ffffff !important;
   border: 0 !important;
@@ -223,6 +229,7 @@ nav li a:hover {
   box-shadow: none !important;
   color: var(--secondary-color);
 }
+
 .questionBtn:active {
   background-color: #ffffff !important;
   border: 0 !important;
@@ -241,9 +248,11 @@ nav li a:hover {
   min-height: 300px;
   background-color: rgb(255, 255, 255);
 }
+
 .companyHeadingColorText1 {
   color: var(--primary);
 }
+
 .companyHeadingColorText2 {
   color: var(--secondary-color);
 }
@@ -251,6 +260,7 @@ nav li a:hover {
 .companyContentOne img {
   margin-top: 40px;
 }
+
 /* END COMPANY AND STAF SECTION  */
 
 /* START WEB HOSTING  SECTION  */
@@ -259,6 +269,7 @@ nav li a:hover {
   min-height: 340px;
   background-color: rgb(255, 255, 255);
 }
+
 .transferCard {
   display: flex;
   justify-content: center;
@@ -268,6 +279,7 @@ nav li a:hover {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .divOne {
   width: 240px;
   height: 260px;
@@ -283,6 +295,7 @@ nav li a:hover {
   cursor: pointer;
   transition: all 0.5s;
 }
+
 @media screen and (max-width: 768px) {
   .divOne {
     width: 90%;
@@ -290,12 +303,14 @@ nav li a:hover {
     padding: 5px;
   }
 }
+
 @media screen and (max-width: 576px) {
   .divOne {
     width: 100%;
     height: auto;
   }
 }
+
 /* END WEB HOSTING  SECTION  */
 
 /* START SKILL SECTION */
@@ -304,30 +319,35 @@ nav li a:hover {
   height: 400px;
   background-color: rgb(255, 255, 255);
 }
+
 .skillone {
   width: 100%;
   height: 10px;
   background-color: #ffbdbd;
   border-radius: 50px;
 }
+
 .skillIndeepth {
   width: 80%;
   height: 100%;
   background-color: var(--secondary-color);
   border-radius: 50px;
 }
+
 .skilltwo {
   width: 100%;
   height: 10px;
   background-color: #d2c2ff;
   border-radius: 50px;
 }
+
 .skillIndeepthtwo {
   width: 70%;
   height: 100%;
   background-color: var(--primary);
   border-radius: 50px;
 }
+
 @media screen and (max-width: 768px) {
   .skillContent {
     width: 100% !important;
@@ -343,16 +363,20 @@ nav li a:hover {
   min-height: 400px;
   background-color: rgb(255, 255, 255);
 }
+
 /* card slider */
 .slider {
   width: 100%;
-  height: 500px;
   background-color: rgb(255, 255, 255);
 }
+
 .swiper {
   width: 100%;
   height: 100%;
+  padding-bottom: 50px !important;
+  padding-right: 20px !important;
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -360,20 +384,23 @@ nav li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
 }
+
 .cardOne .card {
   border-radius: 10px !important;
 }
+
 .swiper-slide img {
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
+
 .socialIcon img {
   width: 30px;
 }
+
 .cardOne .card:hover {
   cursor: pointer;
   box-shadow: var(--shadow);
@@ -381,30 +408,36 @@ nav li a:hover {
   border-radius: 15px;
 }
 
-@media screen and (max-width: 992px) {
-  .swiper-slide {
-    width: 100% !important;
-  }
-  .slider {
-    width: 100%;
-    height: 100%;
-  }
-}
 @media screen and (max-width: 768px) {
   .swiper-slide {
     width: 100% !important;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .swiper-slide {
+    width: 100% !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #d2c2ff !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary) !important;
+}
+
 /* END EXPERT TEAM SECTION */
 
 /* START ABOUTE CSS HERE***  */
 
 /* Back to top button  */
-.BTbtn{
+.BTbtn {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background-color: white ;
+  background-color: white;
   border: 3px solid var(--primary);
   display: flex;
   justify-content: center;

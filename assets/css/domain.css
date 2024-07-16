@@ -57,6 +57,7 @@ nav li a:hover {
 .dropdown-menu a {
   padding: 2px;
 }
+
 .dropdown-menu .dropdown-item:active {
   background-color: var(--primary) !important;
 }
@@ -94,6 +95,7 @@ nav li a:hover {
     padding: 0px 20px;
   }
 }
+
 /* end navbar here  */
 /* start Hero sectinon here  */
 #hero {
@@ -108,7 +110,7 @@ nav li a:hover {
   align-content: center;
 }
 
-.heroHeadingtext{
+.heroHeadingtext {
   width: 100%;
   height: 100%;
   margin-top: 100px !important;
@@ -136,21 +138,24 @@ nav li a:hover {
   text-transform: capitalize;
 }
 
-.domain-service a{
+.domain-service a {
   text-decoration: none;
   color: #bab8b8;
-  
+
 }
-.domain-service p{
-  
+
+.domain-service p {
+
   padding-top: 10px !important;
-  
+
 }
-.domain-service a:hover{
+
+.domain-service a:hover {
   color: #ffffff;
 }
 
-.callerfixing, .mailFixing{
+.callerfixing,
+.mailFixing {
   cursor: pointer;
 }
 
@@ -158,13 +163,14 @@ nav li a:hover {
   color: rgb(168, 168, 168) !important;
   text-align: start;
 }
-.footer-img a{
+
+.footer-img a {
   text-decoration: none;
 }
 
 
 @media screen and (max-width:768px) {
-  .domain-service{
+  .domain-service {
     width: 100%;
   }
 }
@@ -191,7 +197,7 @@ nav li a:hover {
 .tramsAndCondition a {
   text-decoration: none;
   color: rgb(43, 43, 43);
-} 
+}
 
 /* *******************mejor */
 @media screen and (max-width: 768px) {
@@ -201,6 +207,7 @@ nav li a:hover {
     flex-wrap: wrap !important;
   }
 }
+
 /* START PRICING CARD SECTION  */
 .circleContent {
   width: 150px;
@@ -213,6 +220,7 @@ nav li a:hover {
   align-content: center;
   box-sizing: border-box !important;
 }
+
 .pricingCardButton {
   background-color: var(--primary);
   color: white;
@@ -220,6 +228,7 @@ nav li a:hover {
   margin-top: 20px;
   transition: all 0.4s ease-in-out;
 }
+
 .pricingCardButton:hover {
   background-color: white;
   color: var(--primary);
@@ -237,6 +246,7 @@ nav li a:hover {
   gap: 40px;
   /* margin: 0px 10px; */
 }
+
 .pricingHeading {
   width: 100%;
   min-height: 500px;
@@ -247,6 +257,7 @@ nav li a:hover {
 .bsResponsive {
   width: 340px;
 }
+
 .bsResponsive:hover {
   box-shadow: var(--shadow);
   background-color: var(--shadowBG);
@@ -254,11 +265,13 @@ nav li a:hover {
   transition: all 0.5s;
   border-radius: 8px;
 }
+
 .circleContentText h3,
 p {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 @media screen and (max-width: 992px) {
   .bsResponsive {
     width: 100% !important;
@@ -278,12 +291,14 @@ p {
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .divOne {
   width: 330px;
   height: auto;
   background-color: rgb(255, 255, 255);
-  padding: 10px;
+  padding: 10px 4px;
 }
+
 .divOne:hover {
   box-shadow: var(--shadow);
   background-color: var(--shadowBG);
@@ -291,22 +306,29 @@ p {
   cursor: pointer;
   transition: all 0.5s;
 }
+
 .domainFeaturesMargin {
   margin-top: 80px;
   margin-bottom: 50px;
 }
+
 @media screen and (max-width: 992px) {
   .divOne {
     width: 100% !important;
   }
 }
 
+.transferStephead {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
 /*  start transferCirle section*/
-.transferCirle{
- width: 30px;
- height: 30px;
-  background-color:#ff3838;
-  border-radius: 50px; 
+.transferCirle {
+  width: 30px;
+  height: 30px;
+  background-color: #ff3838;
+  border-radius: 50px;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -315,11 +337,12 @@ p {
   z-index: 999;
 }
 
-.LineDroWrapper{
+.LineDroWrapper {
   position: relative;
- 
+
 }
-.drowLine{
+
+.drowLine {
   max-width: 383px;
   height: 3px;
   background-color: rebeccapurple;
@@ -327,7 +350,8 @@ p {
   top: 20px;
   left: 240px;
 }
-.drowLine2{
+
+.drowLine2 {
   width: 383px;
   height: 3px;
   background-color: rebeccapurple;
@@ -337,20 +361,25 @@ p {
 }
 
 @media screen and (max-width:768px) {
-  .LineDroWrapper{
+  .LineDroWrapper {
     display: none;
   }
 }
+
 @media screen and (max-width:992px) {
-  .drowLine2, .drowLine{
+
+  .drowLine2,
+  .drowLine {
     width: 373px;
   }
 }
+
 @media screen and (min-width:992px) {
-  .drowLine2{
+  .drowLine2 {
     width: 580px;
   }
-  .drowLine{
+
+  .drowLine {
     max-width: 573px;
     height: 3px;
     background-color: rebeccapurple;
@@ -359,11 +388,13 @@ p {
     left: 240px;
   }
 }
+
 @media screen and (min-width:1200px) {
-  .drowLine2{
+  .drowLine2 {
     width: 720px;
   }
-  .drowLine{
+
+  .drowLine {
     max-width: 758px;
     height: 3px;
     background-color: rebeccapurple;
@@ -387,6 +418,7 @@ p {
   min-height: 340px;
   background-color: rgb(255, 255, 255);
 }
+
 .transferCard {
   display: flex;
   justify-content: space-around;
@@ -423,14 +455,17 @@ p {
   background-color: #eae2ff;
   margin-top: 100px;
 }
+
 .questionHeadingText {
   color: var(--secondary-color);
 }
+
 .guarenteeBtn {
   background-color: var(--primary);
   text-transform: capitalize;
   color: white;
 }
+
 .guarenteeBtn:hover {
   text-transform: capitalize;
   color: var(--primary);
@@ -438,6 +473,7 @@ p {
   border: 1px solid var(--primary);
   transition: all 0.5s ease-in-out;
 }
+
 .guarenteeBtn {
   transition: all 1s ease-in-out;
 }
@@ -447,17 +483,19 @@ p {
   justify-content: center !important;
   align-items: center !important;
 }
+
 .guarentyPtext {
   color: var(--secondary-color) !important;
 }
+
 /* END GUARENTEE SECTION  */
 
 /* Back to top button  */
-.BTbtn{
+.BTbtn {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background-color: white ;
+  background-color: white;
   border: 3px solid var(--primary);
   display: flex;
   justify-content: center;
@@ -466,4 +504,3 @@ p {
   bottom: 10px;
   right: 10px;
 }
-
