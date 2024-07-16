@@ -430,8 +430,8 @@ nav li a:hover {
 
 /* Back to top button  */
 .BTbtn{
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   background-color: white ;
   border: 3px solid var(--primary);
@@ -439,6 +439,6 @@ nav li a:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 30px;
+  right: 30px;
 }

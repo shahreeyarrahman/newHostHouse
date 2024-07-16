@@ -219,7 +219,7 @@ nav li a:hover {
   border: 0 !important;
   outline: 0 !important;
   box-shadow: none !important;
-  color: var(--secondary-color);
+  color: black;
 }
 
 .questionBtn {
@@ -227,7 +227,7 @@ nav li a:hover {
   border: 0 !important;
   outline: 0 !important;
   box-shadow: none !important;
-  color: var(--secondary-color);
+  color: black;
 }
 
 .questionBtn:active {
@@ -254,7 +254,7 @@ nav li a:hover {
 }
 
 .companyHeadingColorText2 {
-  color: var(--secondary-color);
+  color: black;
 }
 
 .companyContentOne img {
@@ -282,7 +282,7 @@ nav li a:hover {
 
 .divOne {
   width: 240px;
-  height: 260px;
+  height: 270px;
   background-color: rgb(255, 255, 255);
   margin-top: 10px;
 }
@@ -434,8 +434,8 @@ nav li a:hover {
 
 /* Back to top button  */
 .BTbtn {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   background-color: white;
   border: 3px solid var(--primary);
@@ -443,6 +443,6 @@ nav li a:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 30px;
+  right: 30px;
 }

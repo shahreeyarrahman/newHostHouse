@@ -418,7 +418,7 @@ nav li a:hover {
 .formContent input {
   width: 100% !important;
   padding: 10px;
-  border: 2px solid var(--secondary-color) !important;
+  border: 2px solid var(--primary) !important;
   border-radius: 6px;
   margin-top: 5px;
 }
@@ -445,7 +445,7 @@ nav li a:hover {
 .selectInput {
   width: 100% !important;
   padding: 13px;
-  border: 2px solid var(--secondary-color) !important;
+  border: 2px solid var(--primary) !important;
   border-radius: 6px;
   margin-top: 5px;
 }
@@ -454,7 +454,7 @@ nav li a:hover {
   width: 100% !important;
   height: 150px;
   padding: 13px;
-  border: 2px solid var(--secondary-color) !important;
+  border: 2px solid var(--primary) !important;
   border-radius: 6px;
 }
 .formCheakboxWrapper input {
@@ -495,13 +495,17 @@ nav li a:hover {
 .adjustCheakboxResize input{
   width: 20px !important;
   height: 10px !important;
-  border: 1px solid var(--secondary-color) !important;
+  border: 1px solid var(--primary) !important;
   cursor: pointer !important;
+}
+/* themcolor change  */
+.form-check-input:checked{
+  background-color: var(--primary) !important;
 }
 .adjustCheakboxResize input:focus{
   width: 20px !important;
   height: 10px !important;
-  border: 1px solid black !important;
+  border: 1px solid var(--primary) !important;
   box-shadow: none !important;
 }
 @media screen and (max-width:768px) {
@@ -521,8 +525,8 @@ nav li a:hover {
 
 /* Back to top button  */
 .BTbtn{
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   background-color: white ;
   border: 3px solid var(--primary);
@@ -530,6 +534,6 @@ nav li a:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 30px;
+  right: 30px;
 }
