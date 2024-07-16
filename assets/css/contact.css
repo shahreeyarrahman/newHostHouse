@@ -98,7 +98,7 @@ nav li a:hover {
 
 /* START HERO SECTION   */
 #hero {
-  background: url("../LinkContactPage/image/contact-hero-image.png");
+  background: url("../images/Contact/image/contact-hero-image.png");
   width: 100%;
   min-height: 70vh;
   background-size: cover;
@@ -496,6 +496,7 @@ nav li a:hover {
   width: 20px !important;
   height: 10px !important;
   border: 1px solid var(--secondary-color) !important;
+  cursor: pointer !important;
 }
 .adjustCheakboxResize input:focus{
   width: 20px !important;
@@ -512,6 +513,7 @@ nav li a:hover {
 .selectInput option {
   width: 100px !important;
 }
+
 
 /* END CONTACT FORM SECTION  */
 

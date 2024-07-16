@@ -97,7 +97,7 @@ nav li a:hover {
 /* end navbar here  */
 /* start Hero sectinon here  */
 #hero {
-  background: url("../LinkDomainPage/image/domainHeroImage.png");
+  background: url("../images/Domain/image/domainHeroImage.png");
   width: 100%;
   min-height: 70vh;
   background-size: cover;

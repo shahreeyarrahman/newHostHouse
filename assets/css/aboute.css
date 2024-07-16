@@ -98,7 +98,7 @@ nav li a:hover {
 
 /* START HERO SECTION   */
 #hero {
-  background: url("../LinkAboutePage/image/abouteHeroImage.png");
+  background: url("../images/About/image/abouteHeroImage.png");
   width: 100%;
   min-height: 70vh;
   background-size: cover;
@@ -270,7 +270,7 @@ nav li a:hover {
 }
 .divOne {
   width: 240px;
-  height: 250px;
+  height: 260px;
   background-color: rgb(255, 255, 255);
   margin-top: 10px;
 }
